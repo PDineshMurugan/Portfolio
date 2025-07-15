@@ -1,6 +1,4 @@
-Thanks for downloading this template!
-
-Template Name: iPortfolio
-Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-Author: BootstrapMade.com
+it's my portfolio 
+check this out
+https://dineshmurugan.netlify.app
 License: https://bootstrapmade.com/license/
