@@ -130,6 +130,7 @@ html -->
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+
 <!-- maintance redirect
   <meta http-equiv="refresh" content="0; url=maintenance.html">
   <script>
@@ -715,6 +716,14 @@ html -->
 <!--chat bot-->
 
   <script src="assets/js/main.js" defer></script>
+  <script>
+    // service-worker.js registration
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js')
+    .then(() => console.log("Service Worker Registered"));
+}
+
+  </script>
 
 </body>
 
