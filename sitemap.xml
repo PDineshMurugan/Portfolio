@@ -4,7 +4,6 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
@@ -13,45 +12,9 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://dineshmurugan.netlify.app/Resume%20(1).pdf</loc>
-  <lastmod>2024-12-18T09:06:32+00:00</lastmod>
+  <loc>https://dineshmurugan.netlify.app/DineshMurugan.pdf</loc>
+  <lastmod>2025-07-16T09:06:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://dineshmurugan.netlify.app/ecommerce-deatil</loc>
-  <lastmod>2024-12-18T09:06:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dineshmurugan.netlify.app/blogcard-details</loc>
-  <lastmod>2024-12-18T09:06:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dineshmurugan.netlify.app/calculator-details</loc>
-  <lastmod>2024-12-18T09:06:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dineshmurugan.netlify.app/faqs-detail</loc>
-  <lastmod>2024-12-18T09:06:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dineshmurugan.netlify.app/fourconnect-details</loc>
-  <lastmod>2024-12-18T09:06:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dineshmurugan.netlify.app/techshop-detail</loc>
-  <lastmod>2024-12-18T09:06:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dineshmurugan.netlify.app/todolist-detail</loc>
-  <lastmod>2024-12-18T09:06:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
 
 </urlset>
