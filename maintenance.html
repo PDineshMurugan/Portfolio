@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hold Up... Code is Cooking 👨‍🍳</title>
+  <title>Code in Progress... 🧑‍💻</title>
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- AOS (optional for animation) -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <style>
     * {
@@ -19,7 +17,7 @@
     }
 
     body {
-      background: linear-gradient(135deg, #434343, #ffffff, #ffbf00, #ffffff);
+      background: linear-gradient(135deg, #00F260, #0575E6, #FF6A88, #FF9A8B);
       background-size: 500% 500%;
       animation: gradientMove 10s ease infinite;
       font-family: 'Poppins', sans-serif;
@@ -28,6 +26,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       height: 100vh;
       padding: 1rem;
     }
@@ -38,23 +37,9 @@
       100% { background-position: 0% 50%; }
     }
 
-    h1 {
-      font-size: 2.8rem;
-      color: #fff;
-      text-shadow: 2px 2px #00000066;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: 1.2rem;
-      margin: 0 auto 1.5rem;
-      max-width: 600px;
-      color: #222;
-    }
-
     .emoji {
-      font-size: 4rem;
-      margin-bottom: 1rem;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
       animation: shake 2s infinite;
     }
 
@@ -63,6 +48,27 @@
       25% { transform: rotate(5deg); }
       50% { transform: rotate(-5deg); }
       75% { transform: rotate(5deg); }
+    }
+
+    .cartoon {
+      max-width: 240px;
+      margin-bottom: 1rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      text-shadow: 2px 2px #00000066;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 0 auto 1.2rem;
+      max-width: 600px;
+      color: #222;
     }
 
     .button-85 {
@@ -74,7 +80,7 @@
       font-weight: 600;
       border-radius: 50px;
       cursor: pointer;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);   
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
       transition: all 0.3s ease-in-out;
       margin-top: 1rem;
     }
@@ -85,7 +91,7 @@
     }
 
     .button-85:hover {
-      transform: scale(1);
+      transform: scale(1.05);
       background-color: #ffe66d;
     }
 
@@ -97,13 +103,16 @@
   </style>
 </head>
 <body>
-  <div class="emoji">🧑‍💻🔥</div>
-  <h1>Page is Being Coded Live!</h1>
+  <div class="emoji">🧑‍💻🔧</div>
+
+  <!-- Cartoon Image of Kid Coding -->
+
+  <h1>Code in Progress… Please Stand By!</h1>
   <p>
-    Dinesh is updating his portfolio like a true keyboard warrior. <br>
-    New stuff is coming in hot — just give it a few hours! 🚀
+    Our little genius (that’s me 😎) is tweaking the portfolio. <br>
+    Few Updates, lots of coffee, and some epic keyboard smashing in progress!
   </p>
-  <p><strong>(In the meantime, grab his resume below 👇)</strong></p>
+  <p><strong>Meanwhile, you can download the resume directly 👇</strong></p>
 
   <button class="button-85" role="button">
     <a href="DineshMurugan.pdf" download data-aos="zoom-in" data-aos-duration="200">
@@ -111,7 +120,7 @@
     </a>
   </button>
 
-  <div class="footer">– Powered by Caffeine & Code ☕💻</div>
+  <div class="footer">– Built with ❤️ and semi-broken code by <a href="https://www.linkedin.com/in/dineshmuruganp/" style="color: white;">Dinesh Murugan</a></div>
 
   <!-- AOS Script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
