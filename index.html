@@ -39,6 +39,10 @@
       font-family: 'Poppins', sans-serif;
       font-size: 3rem;
     }
+    @media (max-width: 768px) {
+        #hero h1 { font-size: 24px; }
+    .typed { display: none; } /* or show static text */
+  }
   </style>
 
   <!-- ✅ Essential Vendor CSS (Bootstrap only first if needed) -->
@@ -791,7 +795,6 @@ otherTabs.forEach(tab => {
   <script src="assets/vendor/waypoints/noframework.waypoints.js" defer></script>
 
   <!-- Template Main JS File -->
-<!--chat bot-->
 
   <script src="assets/js/main.js" defer></script>
   <script>
