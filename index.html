@@ -2,74 +2,129 @@
 <html lang="en">
 
 <head>
-  <!-- title -->
   <title>Dinesh Murugan | Frontend Web Developer</title>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "url": "https://dineshmurugan.netlify.app/",
-      "name": "Dinesh Murugan - Full Stack Web Developer",
-      "description": "Dinesh Murugan is a passionate Full Stack Web Developer with expertise in front-end and back-end technologies, building innovative web applications.",
-      "author": {
-        "@type": "Person",
-        "name": "Dinesh Murugan Palavesa Muthu",
-        "url": "https://dineshmurugan.netlify.app/",
-        "sameAs": [
-          "https://www.linkedin.com/in/yourprofile",
-          "https://github.com/PDineshMurugan",
-          "https://www.frontendmentor.io/profile/PDineshMurugan"
-        ]
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Dinesh Murugan Portfolio",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://dineshmurugan.netlify.app/images/logo.png"
-        }
-      },
-      "mainEntityOfPage": "https://dineshmurugan.netlify.app/",
-      "keywords": ["Full Stack Developer", "Web Developer", "Portfolio", "HTML", "CSS", "JavaScript", "Angular", "SEO", "Frontend"],
-      "image": "https://dineshmurugan.netlify.app/images/portfolio-banner.jpg",
-      "datePublished": "2024-1-12",
-      "dateModified": "2024-12-30"
-    }
-  </script>
 
+  <!-- ✅ Meta Info -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="description" content="Personal portfolio of Dinesh Murugan, showcasing expertise in web development, design, and programming.">
+  <meta name="keywords" content="web development, portfolio, Dinesh Murugan, frontend, backend, programming, design, web developer, full stack development, HTML, CSS, JavaScript, Angular, TypeScript, web design, SEO">
+  <meta name="author" content="Dinesh Murugan">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://dineshmurugan.netlify.app">
 
-  <!-- Keywords -->
-  <meta name="keywords" content="web development, portfolio, Dinesh Murugan, frontend, backend, programming, design, web developer, full stack development, HTML, CSS, JavaScript, Node.js, Express, web design">
+  <!-- ✅ Favicons -->
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon.png">
 
+  <!-- ✅ Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Robots Meta Tag -->
-  <meta name="robots" content="index, follow">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+  <!-- ✅ Preload hero background image -->
   <link rel="preload" as="image" href="assets/img/hero-bg.jpg">
 
+  <!-- ✅ Preload and optimize Google Fonts -->
+<link rel="preload" href="assets/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 
+  <!-- ✅ Inline critical CSS (especially for #hero) -->
+  <style>
+    #hero {
+      min-height: 100vh;
+      background: url('assets/img/hero-bg.jpg') center center no-repeat;
+      background-size: cover;
+    }
+    #hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+    }
+  </style>
+
+  <!-- ✅ Essential Vendor CSS (Bootstrap only first if needed) -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ⏳ Defer non-critical CSS -->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+  <!-- ✅ Main Template CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- ✅ Structured Data -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url": "https://dineshmurugan.netlify.app/",
+    "name": "Dinesh Murugan - Full Stack Web Developer",
+    "description": "Dinesh Murugan is a passionate Full Stack Web Developer with expertise in front-end and back-end technologies, building innovative web applications.",
+    "author": {
+      "@type": "Person",
+      "name": "Dinesh Murugan Palavesa Muthu",
+      "url": "https://dineshmurugan.netlify.app/",
+      "sameAs": [
+        "https://www.linkedin.com/in/yourprofile",
+        "https://github.com/PDineshMurugan",
+        "https://www.frontendmentor.io/profile/PDineshMurugan"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Dinesh Murugan Portfolio",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dineshmurugan.netlify.app/images/logo.png"
+      }
+    },
+    "mainEntityOfPage": "https://dineshmurugan.netlify.app/",
+    "keywords": ["Full Stack Developer", "Web Developer", "Portfolio", "HTML", "CSS", "JavaScript", "Angular", "SEO", "Frontend"],
+    "image": "https://dineshmurugan.netlify.app/images/portfolio-banner.jpg",
+    "datePublished": "2024-01-12",
+    "dateModified": "2024-12-30"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://dineshmurugan.netlify.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://dineshmurugan.netlify.app/#about"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Resume",
+        "item": "https://dineshmurugan.netlify.app/#resume"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Portfolio",
+        "item": "https://dineshmurugan.netlify.app/#portfolio"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Contact",
+        "item": "https://dineshmurugan.netlify.app/#contact"
+      }
+    ]
+  }
+]
+</script>
 
 
 <!-- Open Graph (for Facebook and LinkedIn) -->
@@ -97,57 +152,21 @@ html -->
 <meta property="og:image:alt" content="Dinesh Murugan Profile Picture">
 <meta name="twitter:image:alt" content="Dinesh Murugan Profile Picture">
 
-<!-- Add preconnect to Google Fonts to improve load times: -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-
- <!-- Google Tag Manager -->
-<script>
-  (function(w,d,s,l,i){
-    w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
-    var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
-    j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-    f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KWKQCGLB');
-</script>
-<!-- End Google Tag Manager -->
-
-<!-- Google Analytics (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VPX3EXQJTE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'G-VPX3EXQJTE', {
-    cookie_flags: 'SameSite=None;Secure',
-    debug_mode: false
-  });
-</script>
-
-<!-- Hotjar Tracking -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:5332420,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-
-
-<!-- maintance redirect
-  <meta http-equiv="refresh" content="0; url=maintenance.html">
+  <!-- ✅ Hotjar (non-blocking, async) -->
   <script>
-    window.location.href = "maintenance.html";
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:5332420,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
 
-  <noscript>
-    <meta http-equiv="refresh" content="0; url=maintenance.html">
-  </noscript> -->
+  <!-- ✅ GTM or GA (if uncommented in future, load async/defer) -->
 </head>
+
 
 <body>
 
