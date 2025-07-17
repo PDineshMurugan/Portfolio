@@ -1,16 +1,15 @@
 # robots.txt file for Dinesh Murugan's Portfolio
 
-# Allow all search engine bots to crawl the site
+# Allow all search engine bots to crawl everything
 User-agent: *
 Disallow:
 
-# Crawl delay for bots that respect this directive (optional, adjust if needed)
+# Optional: Slow down aggressive bots (5 seconds between requests)
 Crawl-delay: 5
 
-
-# Allow bots to crawl public assets (adjust folder names as needed)
+# Explicitly allow crawling of asset directories
 Allow: /assets/
 Allow: /public/
 
-# Provide the sitemap URL to help bots discover all pages
+# Provide sitemap location for better indexing
 Sitemap: https://dineshmurugan.netlify.app/sitemap.xml
