@@ -168,15 +168,36 @@ html -->
   </script>
 
   <!-- ✅ GTM or GA (if uncommented in future, load async/defer) -->
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-56ZY3RM4MH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-56ZY3RM4MH');
+
+  // Detect fbclid source and send event
+  if (window.location.search.includes('fbclid')) {
+    let ref = document.referrer.toLowerCase();
+    let platform = 'Facebook';
+    if (ref.includes('instagram.com')) platform = 'Instagram';
+    else if (ref.includes('threads.net')) platform = 'Threads';
+
+    // Send custom event to GA4
+    gtag('event', 'fbclid_visit', {
+      facebook_platform: platform
+    });
+
+    // Clean URL
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+</script>
+
 </head>
 
 
 <body>
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWKQCGLB"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
@@ -556,9 +577,9 @@ otherTabs.forEach(tab => {
           <!-- Product Preview card -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
             <div class="portfolio-wrap">
-              <img src="MyProject-img/ProductCard.jpg" class="img-fluid" alt="Prodcut Preview Page">
+              <img src="MyProject-img/frontend mentor/ProductCard.jpg" class="img-fluid" alt="Prodcut Preview Page">
               <div class="portfolio-links">
-                <a href="MyProject-img/ProductCard.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="MyProject-img/frontend mentor/ProductCard.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
                 <a href="https://pdineshmurugan.github.io/Product-preview-card-component/" title="Prodcut Preview Card"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -566,9 +587,9 @@ otherTabs.forEach(tab => {
           <!-- Simple Recipe -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
             <div class="portfolio-wrap">
-              <img src="MyProject-img/simple_recipe.jpg" class="img-fluid" alt="Simple Recipe">
+              <img src="MyProject-img/frontend mentor/simple_recipe.jpg" class="img-fluid" alt="Simple Recipe">
               <div class="portfolio-links">
-                <a href="MyProject-img/simple_recipe.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="MyProject-img/frontend mentor/simple_recipe.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
                 <a href="https://pdineshmurugan.github.io/RecipePage/" title="Simple Recipe Page"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -576,9 +597,9 @@ otherTabs.forEach(tab => {
            <!-- rest Countries -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
             <div class="portfolio-wrap">
-              <img src="MyProject-img/rest.png" class="img-fluid" alt="Rest Countries Page">
+              <img src="MyProject-img/frontend mentor/rest.png" class="img-fluid" alt="Rest Countries Page">
               <div class="portfolio-links">
-                <a href="MyProject-img/rest.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Rest Countries Pag"><i class="bx bx-plus"></i></a>
+                <a href="MyProject-img/frontend mentor/rest.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Rest Countries Pag"><i class="bx bx-plus"></i></a>
                 <a href="https://pdineshmurugan.github.io/REST_Countries/" title="Rest Countries"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -586,9 +607,9 @@ otherTabs.forEach(tab => {
           <!-- sunny site -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
             <div class="portfolio-wrap">
-              <img src="MyProject-img/sunny_site.jpg" class="img-fluid" alt="Sunny Side site">
+              <img src="MyProject-img/frontend mentor/sunny_site.jpg" class="img-fluid" alt="Sunny Side site">
               <div class="portfolio-links">
-                <a href="MyProject-img/sunny_site.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="sunny side site"><i class="bx bx-plus"></i></a>
+                <a href="MyProject-img/frontend mentor/sunny_site.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="sunny side site"><i class="bx bx-plus"></i></a>
                 <a href="https://pdineshmurugan.github.io/SunnySide/" title="Sunny Side Page"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -596,9 +617,9 @@ otherTabs.forEach(tab => {
           <!-- Age Calculator Site-->
           <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
             <div class="portfolio-wrap">
-              <img src="MyProject-img/age_calculator.jpg" class="img-fluid" alt="Sunny Side site">
+              <img src="MyProject-img/frontend mentor/age_calculator.jpg" class="img-fluid" alt="Sunny Side site">
               <div class="portfolio-links">
-                <a href="MyProject-img/age_calculator.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="sunny side site"><i class="bx bx-plus"></i></a>
+                <a href="MyProject-img/frontend mentor/age_calculator.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="sunny side site"><i class="bx bx-plus"></i></a>
                 <a href="https://pdineshmurugan.github.io/Age_calculator/" title="Age Calculator Page"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -606,9 +627,9 @@ otherTabs.forEach(tab => {
           <!--Testimonial Site-->
           <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
             <div class="portfolio-wrap">
-              <img src="MyProject-img/Testimonial.jpg" class="img-fluid" alt="Sunny Side site">
+              <img src="MyProject-img/frontend mentor/Testimonial.jpg" class="img-fluid" alt="Sunny Side site">
               <div class="portfolio-links">
-                <a href="MyProject-img/Testimonial.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="sunny side site"><i class="bx bx-plus"></i></a>
+                <a href="MyProject-img/frontend mentor/Testimonial.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="sunny side site"><i class="bx bx-plus"></i></a>
                 <a href="https://pdineshmurugan.github.io/testimonials-grid-section-main/" title="Testimonials Grid Page"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -616,9 +637,9 @@ otherTabs.forEach(tab => {
           <!--Rating Site-->
           <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
             <div class="portfolio-wrap">
-              <img src="MyProject-img/rating.jpg" class="img-fluid" alt="Sunny Side site">
+              <img src="MyProject-img/frontend mentor/rating.jpg" class="img-fluid" alt="Sunny Side site">
               <div class="portfolio-links">
-                <a href="MyProject-img/rating.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="sunny side site"><i class="bx bx-plus"></i></a>
+                <a href="MyProject-img/frontend mentor/rating.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="sunny side site"><i class="bx bx-plus"></i></a>
                 <a href="https://pdineshmurugan.github.io/-Interactive-rating-component/" title="Interactive Rating Page"><i class="bx bx-link"></i></a>
               </div>
             </div>
