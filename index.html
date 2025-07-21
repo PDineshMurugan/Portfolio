@@ -99,22 +99,39 @@
   }
   </script>
 
-  <!-- Analytics and behavior scripts: async/non-blocking -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-56ZY3RM4MH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-56ZY3RM4MH');
-    // Track social traffic, clean URL (optional, as provided)
-    if(window.location.search.includes('fbclid')){
-      let ref=document.referrer.toLowerCase(),platform='Facebook';
-      if(ref.includes('instagram.com')) platform='Instagram';
-      else if(ref.includes('threads.net')) platform='Threads';
-      gtag('event','fbclid_visit',{facebook_platform: platform});
-      window.history.replaceState({},document.title,window.location.pathname);
-    }
-  </script>
+<!-- Analytics and behavior scripts: async/non-blocking -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-56ZY3RM4MH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-56ZY3RM4MH');
+
+  // Track social traffic, clean URL (optional, as provided)
+  if (window.location.search.includes('fbclid')) {
+    let ref = document.referrer.toLowerCase(), platform = 'Facebook';
+    if (ref.includes('instagram.com')) platform = 'Instagram';
+    else if (ref.includes('threads.net')) platform = 'Threads';
+    gtag('event', 'fbclid_visit', { facebook_platform: platform });
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+
+  // Silent city/district tracking
+  fetch('https://ipapi.co/json/')
+    .then(res => res.json())
+    .then(data => {
+      const city = data.city || "Unknown";
+      const region = data.region || "Unknown";
+      gtag('event', 'visitor_location', {
+        city_name: city,
+        district_name: region
+      });
+    })
+    .catch(() => {
+      console.log("Location detection failed");
+    });
+</script>
+
   <script>
     (function(h,o,t,j,a,r){
       h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
