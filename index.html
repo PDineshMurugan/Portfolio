@@ -787,6 +787,72 @@ if ('serviceWorker' in navigator) {
 }
 
   </script>
+  <!-- Google Analytics with Consent Mode v2 (delays cookies until accepted) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-56ZY3RM4MH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // Consent Mode: no storage by default (privacy-first, still allows basic measurement)
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    analytics_storage: 'denied'
+  });
+
+  gtag('js', new Date());
+  gtag('config', 'G-56ZY3RM4MH', {
+    anonymize_ip: true, // Best practice: mask IP for GDPR and audits
+    transport_type: 'beacon', // Best-practice transport
+    allow_google_signals: false // Block cross-site; stricter privacy
+  });
+
+  // fbclid event tracking (your custom logic)
+  if(window.location.search.includes('fbclid')){
+    let ref=document.referrer.toLowerCase(),platform='Facebook';
+    if(ref.includes('instagram.com')) platform='Instagram';
+    else if(ref.includes('threads.net')) platform='Threads';
+    gtag('event','fbclid_visit',{facebook_platform: platform});
+    window.history.replaceState({},document.title,window.location.pathname);
+  }
+
+  /** When consent is given, unlock full Analytics (called from banner) */
+  function enableAnalytics() {
+    gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'granted' });
+    // Optionally: send a GA4 event for consent
+    gtag('event', 'analytics_consent_granted');
+  }
+
+  // Optional: Auto-enable/deny based on prior selection
+  (function(){
+    var consent = localStorage.getItem('analytics_consent');
+    if(consent === 'granted'){
+      enableAnalytics();
+    }
+    if(consent === 'denied'){
+      gtag('consent', 'update', { analytics_storage: 'denied', ad_storage: 'denied' });
+    }
+  })();
+</script>
+
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:#222;color:#fff;padding:1em;z-index:9999;text-align:center;display:none;">
+  This site uses cookies for analytics. <button id="accept-cookies" style="margin-left:1em;">Accept</button>
+  <button id="decline-cookies" style="margin-left:1em;">Decline</button>
+</div>
+<script>
+  // Show banner if not previously set
+  if (!localStorage.getItem('analytics_consent')) {
+    document.getElementById('cookie-banner').style.display = 'block';
+  }
+
+  document.getElementById('accept-cookies').onclick = function() {
+    localStorage.setItem('analytics_consent', 'granted');
+    enableAnalytics(); // Enable GA4
+    document.getElementById('cookie-banner').style.display = 'none';
+  };
+  document.getElementById('decline-cookies').onclick = function() {
+    localStorage.setItem('analytics_consent', 'denied');
+    document.getElementById('cookie-banner').style.display = 'none';
+  };
+</script>
 
 </body>
 
