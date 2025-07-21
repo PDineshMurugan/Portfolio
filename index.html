@@ -2,198 +2,131 @@
 <html lang="en">
 
 <head>
-  <title>Dinesh Murugan | Frontend Web Developer</title>
-
-  <!-- ✅ Meta Info -->
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="description" content="Personal portfolio of Dinesh Murugan, showcasing expertise in web development, design, and programming.">
-  <meta name="keywords" content="web development, portfolio, Dinesh Murugan, frontend, backend, programming, design, web developer, full stack development, HTML, CSS, JavaScript, Angular, TypeScript, web design, SEO">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dinesh Murugan | Frontend Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Dinesh Murugan: Angular developer, building dynamic, user-friendly web applications. Explore projects, technical skills, and achievements.">
   <meta name="author" content="Dinesh Murugan">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://dineshmurugan.netlify.app">
 
-  <!-- ✅ Favicons -->
-  <link rel="icon" href="assets/img/favicon.png">
+  <!-- Favicons -->
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/img/favicon.png">
 
-  <!-- ✅ Preconnect for fonts -->
+  <!-- Preconnect for fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- ✅ Preload hero background image -->
+  <!-- Preload hero bg (above-the-fold optimization) -->
   <link rel="preload" as="image" href="assets/img/hero-bg.jpg">
 
-  <!-- ✅ Preload and optimize Google Fonts -->
-<link rel="preload" href="assets/fonts/poppins-v23-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/poppins-v23-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Preload fonts for speed -->
+  <link rel="preload" href="assets/fonts/poppins-v23-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/poppins-v23-latin-600.woff2" as="font" type="font/woff2" crossorigin>
 
-  <!-- ✅ Inline critical CSS (especially for #hero) -->
+  <!-- Inline above-the-fold critical CSS -->
   <style>
     #hero {
       min-height: 100vh;
       background: url('assets/img/hero-bg.jpg') center center no-repeat;
       background-size: cover;
     }
-    #hero h1 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 3rem;
-    }
-    @media (max-width: 768px) {
-        #hero h1 { font-size: 24px; }
-  }
+    #hero h1 { font-family: 'Poppins', sans-serif; font-size: 3rem; }
+    @media (max-width:768px){#hero h1{font-size:24px;}}
   </style>
 
-  <!-- ✅ Essential Vendor CSS (Bootstrap only first if needed) -->
+  <!-- Essential Vendor CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- ⏳ Defer non-critical CSS -->
+  <!-- Defer non-critical CSS -->
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" media="print" onload="this.media='all'">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" media="print" onload="this.media='all'">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
-
-  <!-- ✅ Main Template CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- ✅ Structured Data -->
-<script type="application/ld+json">
-[
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:title" content="Dinesh Murugan | Frontend Web Developer">
+  <meta property="og:description" content="Portfolio of Dinesh Murugan: Angular developer with a passion for user-centric web apps.">
+  <meta property="og:image" content="https://dineshmurugan.netlify.app/assets/img/profile-img.jpg">
+  <meta property="og:image:alt" content="Dinesh Murugan Profile Picture">
+  <meta property="og:url" content="https://dineshmurugan.netlify.app">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dinesh Murugan | Frontend Web Developer">
+  <meta name="twitter:description" content="Portfolio of Dinesh Murugan: Angular developer with strong frontend skills.">
+  <meta name="twitter:image" content="https://dineshmurugan.netlify.app/assets/img/profile-img.jpg">
+  <meta name="twitter:image:alt" content="Dinesh Murugan Profile Picture">
+  <meta name="twitter:url" content="https://dineshmurugan.netlify.app">
+  <meta name="twitter:creator" content="@dineshmurugan518">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "url": "https://dineshmurugan.netlify.app/",
-    "name": "Dinesh Murugan - Full Stack Web Developer",
-    "description": "Dinesh Murugan is a passionate Full Stack Web Developer with expertise in front-end and back-end technologies, building innovative web applications.",
-    "author": {
-      "@type": "Person",
-      "name": "Dinesh Murugan Palavesa Muthu",
-      "url": "https://dineshmurugan.netlify.app/",
-      "sameAs": [
-        "https://www.linkedin.com/in/yourprofile",
-        "https://github.com/PDineshMurugan",
-        "https://www.frontendmentor.io/profile/PDineshMurugan"
-      ]
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Dinesh Murugan Portfolio",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://dineshmurugan.netlify.app/images/logo.png"
-      }
-    },
-    "mainEntityOfPage": "https://dineshmurugan.netlify.app/",
-    "keywords": ["Full Stack Developer", "Web Developer", "Portfolio", "HTML", "CSS", "JavaScript", "Angular", "SEO", "Frontend"],
-    "image": "https://dineshmurugan.netlify.app/images/portfolio-banner.jpg",
-    "datePublished": "2024-01-12",
-    "dateModified": "2024-12-30"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://dineshmurugan.netlify.app/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "About",
-        "item": "https://dineshmurugan.netlify.app/#about"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Resume",
-        "item": "https://dineshmurugan.netlify.app/#resume"
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "name": "Portfolio",
-        "item": "https://dineshmurugan.netlify.app/#portfolio"
-      },
-      {
-        "@type": "ListItem",
-        "position": 5,
-        "name": "Contact",
-        "item": "https://dineshmurugan.netlify.app/#contact"
-      }
-    ]
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Dinesh Murugan Palavesa Muthu",
+    "url":"https://dineshmurugan.netlify.app/",
+    "sameAs":[
+      "https://www.linkedin.com/in/yourprofile",
+      "https://github.com/PDineshMurugan",
+      "https://www.frontendmentor.io/profile/PDineshMurugan"
+    ],
+    "jobTitle":"Frontend Web Developer",
+    "image":"https://dineshmurugan.netlify.app/assets/img/profile-img.jpg",
+    "description":"Angular developer passionate about user-friendly apps.",
+    "knowsAbout":["Angular","JavaScript","HTML","CSS","Web Development"],
+    "alumniOf":"B.E. in EEE, graduating April 2025"
   }
-]
-</script>
-
-
-<!-- Open Graph (for Facebook and LinkedIn) -->
-<meta property="og:title" content="Dinesh Murugan Portfolio">
-<meta property="og:description" content="Personal portfolio of Dinesh Murugan, showcasing expertise in web development, design, and programming.">
-<meta property="og:image" content="https://dineshmurugan.netlify.app/assets/img/profile-img.jpg">
-<meta property="og:url" content="https://dineshmurugan.netlify.app">
-<meta property="og:type" content="website">
-
-<!-- Twitter Card Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Dinesh Murugan Portfolio">
-<meta name="twitter:description" content="Personal portfolio of Dinesh Murugan, showcasing expertise in web development, design, and programming.">
-<meta name="twitter:image" content="https://dineshmurugan.netlify.app/assets/img/profile-img.jpg">
-<meta name="twitter:url" content="https://dineshmurugan.netlify.app">
-<meta name="twitter:creator" content="@dineshmurugan518">
-
-<!-- Additional Meta Tags for other social platforms -->
-<meta name="pinterest" content="Dinesh Murugan Portfolio">
-<meta name="author" content="Dinesh Murugan">
-
-<!-- Add og:image:alt and twitter:image:alt for accessibility and better context:
-html -->
-
-<meta property="og:image:alt" content="Dinesh Murugan Profile Picture">
-<meta name="twitter:image:alt" content="Dinesh Murugan Profile Picture"> 
-
-  <!-- ✅ Hotjar (non-blocking, async) -->
-  <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:5332420,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
 
-  <!-- ✅ GTM or GA (if uncommented in future, load async/defer) -->
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-56ZY3RM4MH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-56ZY3RM4MH');
-
-  // Detect fbclid source and send event
-  if (window.location.search.includes('fbclid')) {
-    let ref = document.referrer.toLowerCase();
-    let platform = 'Facebook';
-    if (ref.includes('instagram.com')) platform = 'Instagram';
-    else if (ref.includes('threads.net')) platform = 'Threads';
-
-    // Send custom event to GA4
-    gtag('event', 'fbclid_visit', {
-      facebook_platform: platform
-    });
-
-    // Clean URL
-    window.history.replaceState({}, document.title, window.location.pathname);
+  <!-- BreadcrumbList structured data (optional but concise version) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://dineshmurugan.netlify.app/"},
+      {"@type":"ListItem","position":2,"name":"About","item":"https://dineshmurugan.netlify.app/#about"},
+      {"@type":"ListItem","position":3,"name":"Projects","item":"https://dineshmurugan.netlify.app/#portfolio"},
+      {"@type":"ListItem","position":4,"name":"Contact","item":"https://dineshmurugan.netlify.app/#contact"}
+    ]
   }
-</script>
+  </script>
 
+  <!-- Analytics and behavior scripts: async/non-blocking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-56ZY3RM4MH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-56ZY3RM4MH');
+    // Track social traffic, clean URL (optional, as provided)
+    if(window.location.search.includes('fbclid')){
+      let ref=document.referrer.toLowerCase(),platform='Facebook';
+      if(ref.includes('instagram.com')) platform='Instagram';
+      else if(ref.includes('threads.net')) platform='Threads';
+      gtag('event','fbclid_visit',{facebook_platform: platform});
+      window.history.replaceState({},document.title,window.location.pathname);
+    }
+  </script>
+  <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:5332420,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
 </head>
+
 
 
 <body>
