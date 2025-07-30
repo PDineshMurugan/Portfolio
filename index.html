@@ -1,926 +1,927 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Dinesh Murugan | Frontend Web Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio of Dinesh Murugan: Angular developer, building dynamic, user-friendly web applications. Explore projects, technical skills, and achievements.">
-  <meta name="author" content="Dinesh Murugan">
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://dineshmurugan.netlify.app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dinesh Murugan | Frontend Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Dinesh Murugan: Angular developer, building dynamic, user-friendly web applications. Explore projects, technical skills, and achievements.">
+    <meta name="author" content="Dinesh Murugan">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://dineshmurugan.netlify.app">
 
-  <!-- Favicons -->
-  <link rel="icon" href="assets/img/favicon.png" type="image/png">
-  <link rel="apple-touch-icon" href="assets/img/favicon.png">
+    <!-- Favicons -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
 
-  <!-- Preconnect for fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconnect for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Preload hero bg (above-the-fold optimization) -->
-  <link rel="preload" as="image" href="assets/img/hero-bg.jpg">
+    <!-- Preload hero bg (above-the-fold optimization) -->
+    <link rel="preload" as="image" href="assets/img/hero-bg.jpg">
 
-  <!-- Preload fonts for speed -->
-  <link rel="preload" href="assets/fonts/poppins-v23-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/poppins-v23-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Preload fonts for speed -->
+    <link rel="preload" href="assets/fonts/poppins-v23-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/poppins-v23-latin-600.woff2" as="font" type="font/woff2" crossorigin>
 
-  <!-- Inline above-the-fold critical CSS -->
-  <style>
-    #hero {
-      min-height: 100vh;
-      background: url('assets/img/hero-bg.jpg') center center no-repeat;
-      background-size: cover;
+    <!-- Inline above-the-fold critical CSS -->
+    <style>
+      #hero {
+        min-height: 100vh;
+        background: url('assets/img/hero-bg.jpg') center center no-repeat;
+        background-size: cover;
+      }
+      #hero h1 { font-family: 'Poppins', sans-serif; font-size: 3rem; }
+      @media (max-width:768px){#hero h1{font-size:24px;}}
+    </style>
+
+    <!-- Essential Vendor CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Defer non-critical CSS -->
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:title" content="Dinesh Murugan | Frontend Web Developer">
+    <meta property="og:description" content="Portfolio of Dinesh Murugan: Angular developer with a passion for user-centric web apps.">
+    <meta property="og:image" content="https://dineshmurugan.netlify.app/assets/img/profile-img.jpg">
+    <meta property="og:image:alt" content="Dinesh Murugan Profile Picture">
+    <meta property="og:url" content="https://dineshmurugan.netlify.app">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dinesh Murugan | Frontend Web Developer">
+    <meta name="twitter:description" content="Portfolio of Dinesh Murugan: Angular developer with strong frontend skills.">
+    <meta name="twitter:image" content="https://dineshmurugan.netlify.app/assets/img/profile-img.jpg">
+    <meta name="twitter:image:alt" content="Dinesh Murugan Profile Picture">
+    <meta name="twitter:url" content="https://dineshmurugan.netlify.app">
+    <meta name="twitter:creator" content="@dineshmurugan518">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Person",
+      "name":"Dinesh Murugan Palavesa Muthu",
+      "url":"https://dineshmurugan.netlify.app/",
+      "sameAs":[
+        "https://www.linkedin.com/in/yourprofile",
+        "https://github.com/PDineshMurugan",
+        "https://www.frontendmentor.io/profile/PDineshMurugan"
+      ],
+      "jobTitle":"Frontend Web Developer",
+      "image":"https://dineshmurugan.netlify.app/assets/img/profile-img.jpg",
+      "description":"Angular developer passionate about user-friendly apps.",
+      "knowsAbout":["Angular","JavaScript","HTML","CSS","Web Development"],
+      "alumniOf":"B.E. in EEE, graduating April 2025"
     }
-    #hero h1 { font-family: 'Poppins', sans-serif; font-size: 3rem; }
-    @media (max-width:768px){#hero h1{font-size:24px;}}
-  </style>
+    </script>
 
-  <!-- Essential Vendor CSS -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Defer non-critical CSS -->
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" media="print" onload="this.media='all'">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- Open Graph (Facebook, LinkedIn) -->
-  <meta property="og:title" content="Dinesh Murugan | Frontend Web Developer">
-  <meta property="og:description" content="Portfolio of Dinesh Murugan: Angular developer with a passion for user-centric web apps.">
-  <meta property="og:image" content="https://dineshmurugan.netlify.app/assets/img/profile-img.jpg">
-  <meta property="og:image:alt" content="Dinesh Murugan Profile Picture">
-  <meta property="og:url" content="https://dineshmurugan.netlify.app">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Dinesh Murugan | Frontend Web Developer">
-  <meta name="twitter:description" content="Portfolio of Dinesh Murugan: Angular developer with strong frontend skills.">
-  <meta name="twitter:image" content="https://dineshmurugan.netlify.app/assets/img/profile-img.jpg">
-  <meta name="twitter:image:alt" content="Dinesh Murugan Profile Picture">
-  <meta name="twitter:url" content="https://dineshmurugan.netlify.app">
-  <meta name="twitter:creator" content="@dineshmurugan518">
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Dinesh Murugan Palavesa Muthu",
-    "url":"https://dineshmurugan.netlify.app/",
-    "sameAs":[
-      "https://www.linkedin.com/in/yourprofile",
-      "https://github.com/PDineshMurugan",
-      "https://www.frontendmentor.io/profile/PDineshMurugan"
-    ],
-    "jobTitle":"Frontend Web Developer",
-    "image":"https://dineshmurugan.netlify.app/assets/img/profile-img.jpg",
-    "description":"Angular developer passionate about user-friendly apps.",
-    "knowsAbout":["Angular","JavaScript","HTML","CSS","Web Development"],
-    "alumniOf":"B.E. in EEE, graduating April 2025"
-  }
-  </script>
-
-  <!-- BreadcrumbList structured data (optional but concise version) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"BreadcrumbList",
-    "itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://dineshmurugan.netlify.app/"},
-      {"@type":"ListItem","position":2,"name":"About","item":"https://dineshmurugan.netlify.app/#about"},
-      {"@type":"ListItem","position":3,"name":"Projects","item":"https://dineshmurugan.netlify.app/#portfolio"},
-      {"@type":"ListItem","position":4,"name":"Contact","item":"https://dineshmurugan.netlify.app/#contact"}
-    ]
-  }
-  </script>
-
-<!-- Google Analytics: async & non-blocking -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-56ZY3RM4MH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-56ZY3RM4MH');
-
-  // Social traffic tracking: fires after load
-  window.addEventListener('load', function() {
-    if (window.location.search.includes('fbclid')) {
-      let ref = document.referrer.toLowerCase(), platform = 'Facebook';
-      if (ref.includes('instagram.com')) platform = 'Instagram';
-      else if (ref.includes('threads.net')) platform = 'Threads';
-      gtag('event', 'fbclid_visit', { facebook_platform: platform });
-      window.history.replaceState({}, document.title, window.location.pathname);
+    <!-- BreadcrumbList structured data (optional but concise version) -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://dineshmurugan.netlify.app/"},
+        {"@type":"ListItem","position":2,"name":"About","item":"https://dineshmurugan.netlify.app/#about"},
+        {"@type":"ListItem","position":3,"name":"Projects","item":"https://dineshmurugan.netlify.app/#portfolio"},
+        {"@type":"ListItem","position":4,"name":"Contact","item":"https://dineshmurugan.netlify.app/#contact"}
+      ]
     }
-  });
-</script>
+    </script>
 
-<!-- Hotjar: load after the page becomes interactive -->
-<script>
-  window.addEventListener('load', function () {
-    (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:5332420,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  });
-</script>
-
-</head>
-
-<!-- <script>
-  // Set this to true when maintenance mode is active
-  const isMaintenance = true;
-
-  if (isMaintenance && window.location.pathname !== '/maintenance.html') {
-    window.location.href = '/maintenance.html';
-  }
-</script> -->
-
-
-<body>
-
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="Dinesh Murugan Profile" class="img-fluid rounded-circle">
-        <h1 ><a href="index.html">P Dinesh Murugan</a></h1>
-        <div class="social-links mt-3 text-center">
-              <a href="https://leetcode.com/u/dineshmurugan518/" target="_blank" title="LeetCode Profile">
-              <!-- <svg fill="#ffffff" width="24px" height="24px" viewBox="-2.4 -2.4 28.80 28.80" role="img" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" style="vertical-align: middle; margin-top: -4px;">
-                <title>LeetCode icon</title>
-                <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zM20.811 13.01H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"></path>
-              </svg> -->
-                            <i class="bx bx-code" aria-label="View my LeetCode profile"></i>
-              </a>
-
-
-          <a href="https://www.instagram.com/_dinesh.official/" class="instagram" aria-label="Follow me on Instagram" ><i class="bx bxl-instagram"></i></a>
-
-          
-          
-          <a href="https://www.linkedin.com/in/dineshmuruganp" class="linkedin"><i class="bx bxl-linkedin" aria-label="Follow me on LinkedIn"></i></a>
-          <a href="https://github.com/PDineshMurugan" class="github" aria-label="Follow me on GitHub">
-            <i class="bx bxl-github" aria-label="Follow me on GitHub"></i></a>
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-       
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>P Dinesh Murugan</h1>
-      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer">Developer</span></p>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>    
-           I'm Dinesh Murugan, a passionate frontend developer skilled in Angular, HTML, CSS, JavaScript, and Strapi, with a background in Electrical and Electronics Engineering. I’ve worked on real-time projects like HeatFleet during my internship and regularly build UI challenges on Frontend Mentor. I'm actively seeking a full-time frontend developer role to grow and contribute to impactful projects.            
-  </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Dinesh Murugan Profile">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3> Web Developer</h3>
-            <p class="fst-italic">
-              I'm dedicated to continual learning and growth, regularly attending workshops, online courses, and hackathons to stay updated with the latest industry trends and technologies. I'm excited about the ever-evolving nature of web development and the possibilities it holds.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 6382 410 301</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Tamil Nadu, India</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Electrical and Electronics Engineering</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span id="emailLink">dineshmurugan518@gmail.com</span>
-
-                    <script>
-                    document.getElementById("emailLink").addEventListener("click", function() {
-                      var email = "dineshmurugan518@gmail.com";
-                      window.location.href = "mailto:" + email;
-                    });
-                    </script>
-                </ul>
-              </div>
-            </div>
-            <p>
-             </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    
-    </section><!-- End Facts Section --> 
-
-<!-- ======= Skills Section ======= -->
-<section id="skills" class="skills section-bg">
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Skills</h2>
-      <p>
-        Proficient in front-end development with <strong>HTML, CSS, SCSS, JavaScript</strong>, and frameworks like <strong>Angular</strong>. Skilled in scripting with <strong>TypeScript</strong> and backend integration using <strong>Strapi</strong>. Strong understanding of website optimization through <strong>SEO practices</strong>.
-      </p>
-    </div>
-
-    <div class="row skills-content">
-      <div class="col-lg-6" data-aos="fade-up">
-        <div class="progress">
-          <span class="skill">HTML <i class="val">90%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="HTML 90%"></div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">CSS / SCSS <i class="val">85%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="CSS / SCSS 85%"></div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">JavaScript <i class="val">70%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript 70%"></div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">Angular <i class="val">75%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Angular 75%"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="progress">
-          <span class="skill">TypeScript <i class="val">70%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="TypeScript 70%"></div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">Strapi (Backend Integration) <i class="val">65%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Strapi 65%"></div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">SEO Practices <i class="val">65%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="SEO Practices 65%"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section-title mt-5">
-      <h2>Tools</h2>
-      <p>
-        Experienced with version control using <strong>Git, GitHub, GitLab</strong>, and website analytics tools like <strong>Google Analytics 4 (GA4)</strong>, <strong>Google Search Console</strong>, and <strong>Hotjar</strong>. Proficient in design tools such as <strong>Photoshop 7.0</strong> and <strong>Canva</strong>.
-      </p>
-    </div>
-
-    <div class="row skills-content">
-      <div class="col-lg-6" data-aos="fade-up">
-        <div class="progress">
-          <span class="skill">Git / GitHub / GitLab <i class="val">75%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Git / GitHub / GitLab 75%"></div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">Photoshop & Canva <i class="val">70%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Photoshop & Canva 70%"></div>
-          </div>
-        </div>        
-
-        <div class="progress">
-          <span class="skill">Google Analytics 4 (GA4) <i class="val">65%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Google Analytics 4 (GA4) 65%"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="progress">
-          <span class="skill">Google Search Console <i class="val">65%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Google Search Console 65%"></div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">Hotjar <i class="val">65%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Hotjar 65%"></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section><!-- End Skills Section -->
-
-
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume section">
-      <div class="container section-title" data-aos="fade-up">
-          <h2>Resume</h2>
-          <p>
-            I am a highly motivated and passionate graduate with a Bachelor of Engineering in Electrical and Electronics Engineering, completed in April 2025. With a strong foundation in front-end development and hands-on experience using <strong>Angular, HTML, CSS, JavaScript</strong>, and tools like <strong>Strapi, Git, and SEO platforms</strong>, I am actively seeking a frontend developer role to contribute to real-world projects and grow in a dynamic tech environment.
-          </p>
-
-        </div>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-      <h3 class="resume-title">Sumary</h3>
-      <div class="resume-item pb-0">
-        <h4>Dinesh Murugan P</h4>
-        <p><em>I hold an <a href="https://coursera.org/share/2e4dcfd49bd4292a3cc46508fd15d86d">IBM certification</a> in Web Development and have practical experience through internships at System Star LLC. I have completed over <a href="https://www.frontendmentor.io/profile/PDineshMurugan">15+ Frontend Mentor projects</a>  and solved 55+ Java problems on <a href="https://leetcode.com/u/dineshmurugan518/">LeetCode</a> , demonstrating strong analytical and problem-solving skills. I develop intuitive user interfaces and deliver engaging digital experiences while staying current with industry trends.</em></p>
-        <ul>
-          <li>Tuticorin, Tamil Nadu</li>
-          <li>+91 6382 410 301</li>
-          <li>dineshmurugan518@gmail.com</li>
-        </ul>
-      </div><!-- End Resume Item -->
-
-      <h3 class="resume-title">Education</h3>
-      <div class="resume-item">
-        <h4>B.E. in Electrical and Electronics Engineering</h4>
-        <h5>2021 - 2025</h5>
-        <p><em>Kongunadu College of Engineering and Technology, Trichy</em></p>
-        <p>Secured 79% aggregate.</p>
-      </div><!-- End Resume Item -->
-    </div>
-
-<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-  <h3 class="resume-title">Internship Experience</h3>
-  <div class="resume-item">
-    <h4>Software Developer Intern</h4>
-    <h5>Dec 2024 – June 2025</h5>
-    <p><em>System Star LLC</em></p>
-    <ul>
-      <li>Built responsive UI components and migrated internal admin panel from HTML to Angular for the HeatFleet platform using Angular and SCSS.</li>
-      <li>Led a full homepage redesign aligned with modern UI/UX standards to improve usability and performance.</li>
-      <li>Integrated structured data and resolved SEO issues to boost search engine visibility.</li>
-      <li>Utilized tools like Strapi, Google Search Console, GA4, Google Ads, and Hotjar to enhance content management and user behavior analysis.</li>
-    </ul>
-  </div><!-- End Resume Item -->
-</div>
-
-  </div>
-       <button class="button-85" role="button">  <a href="DineshMurugan.pdf" download=""  data-aos="zoom-in" data-aos-duration="200">Download Resume</a></button>
-</div>
-
-        <!-- HTML !-->
-   
-
-        <style>
-        .button-85 {
-          padding: 0.6em 2em;
-          border: none;
-          outline: none;
-          color: rgb(255, 255, 255);
-          background: #111111;
-          cursor: pointer;
-          position: relative;
-          z-index: 0;
-          border-radius: 10px;
-          user-select: none;
-          -webkit-user-select: none;
-          touch-action: manipulation;
-        }
-        .button-85 a{
-          color: white;
-        }
-
-        .button-85:before {
-          content: "";
-          background: linear-gradient(
-            45deg,
-            #ff0000,
-            #ff7300,
-            #fffb00,
-            #48ff00,
-            #00ffd5,
-            #002bff,
-            #7a00ff,
-            #ff00c8,
-            #ff0000
-          );
-          position: absolute;
-          top: -2px;
-          left: -2px;
-          background-size: 400%;
-          z-index: -1;
-          filter: blur(5px);
-          -webkit-filter: blur(5px);
-          width: calc(100% + 4px);
-          height: calc(100% + 4px);
-          animation: glowing-button-85 20s linear infinite;
-          transition: opacity 0.3s ease-in-out;
-          border-radius: 10px;
-        }
-
-        @keyframes glowing-button-85 {
-          0% {
-            background-position: 0 0;
-          }
-          50% {
-            background-position: 400% 0;
-          }
-          100% {
-            background-position: 0 0;
-          }
-        }
-
-        .button-85:after {
-          z-index: -1;
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background: #222;
-          left: 0;
-          top: 0;
-          color: rgb(255, 255, 255);
-          border-radius: 10px;
-        }
-        </style>
-      
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>
-  "Welcome to my digital realm! Explore a curated collection showcasing my expertise in crafting captivating web experiences.
-  From sleek cards to immersive pages, each creation embodies innovation and functionality. Join me on a journey through a spectrum of interactive designs that elevate user experience and redefine online presence."</p> </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active other-tab" >All</li>
-              <li data-filter=".filter-mentor" class="other-tab">Frontend Mentor</li>
-              <li data-filter=".filter-course" class="other-tab">Course</li>
-              <li data-filter=".filter-internship" id="internship-tab">Internship Project</li>
-              <!-- <li data-filter=".filter-mentor">Frontend Mentors Projects</li>
-              <li data-filter=".filter-course">Course Projects</li>
-              <li data-filter=".filter-web">Internship Real Time project</li> -->
-            </ul>
-          </div>
-        </div>
-  <div id="project-description" style="display: none;" >
-  <p>As a frontend developer intern at <strong>System Star LLC</strong>, I played a key role in delivering real-time production-ready features for <strong>HeatFleet</strong>, a commercial fleet management platform. My responsibilities included both <strong>UI development</strong> and <strong>technical SEO optimization</strong>.</p>
-
-  <h4>Key Highlights:</h4>
-  <ul>
-    <li>Transformed the entire HeatFleet landing page from Figma to production, implementing responsive layouts, optimized media, and interactive UI components using <strong>Angular</strong> and <strong>TypeScript</strong>.</li>
-    <li>Redesigned everything from header to footer, ensuring accessibility, performance, and cross-device compatibility.</li>
-    <li>Built <strong>HeatFleet TV</strong> (<a href="https://heatfleet.com/HeatWeek_Tv.html" target="_blank">View HeatFleet TV</a>) — a dedicated video section to host and showcase media content, powered by our custom backend APIs.</li>
-    <li>Conducted manual testing to verify visual and functional consistency across all major browsers and devices.</li>
-    <li>Integrated <strong>Google Analytics</strong> to analyze traffic behavior and measure engagement.</li>
-    <li>Resolved <strong>Google Search Console</strong> issues, improved search indexing, and optimized the visibility of images, videos, and datasets.</li>
-    <li>Collaborated with designers and backend developers to ensure accurate Figma-to-code fidelity and seamless API communication.</li>
-  </ul>
-</div>
-<script>
-const internshipTab = document.getElementById("internship-tab");
-const descriptionBox = document.getElementById("project-description");
-const otherTabs = document.querySelectorAll(".other-tab");
-
-// Show description when Internship clicked
-internshipTab.addEventListener("click", () => {
-  descriptionBox.style.display = "block";
-});
-
-// Hide description when any other tab clicked
-otherTabs.forEach(tab => {
-  tab.addEventListener("click", () => {
-    descriptionBox.style.display = "none";
-  });
-});
-
-</script>
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-<!-- course projects -->
-
-<!-- tech shop -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-course">
-            <div class="portfolio-wrap">
-              <img src="MyProject-img/TechShop.jpeg" class="img-fluid" alt="TechShop Page">
-              <div class="portfolio-links">
-                <a href="MyProject-img/TechShop.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="https://pdineshmurugan.github.io/TechShop/TechShop-main/Project-2%20Tech%20Homepage/index.html" title="Tech Shop"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-<!-- frontend Mentor Projects-->
-          <!-- Product Preview card -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
-            <div class="portfolio-wrap">
-              <img src="MyProject-img/frontend mentor/ProductCard.jpg" class="img-fluid" alt="Prodcut Preview Page">
-              <div class="portfolio-links">
-                <a href="MyProject-img/frontend mentor/ProductCard.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="https://pdineshmurugan.github.io/Product-preview-card-component/" title="Prodcut Preview Card"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <!-- Simple Recipe -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
-            <div class="portfolio-wrap">
-              <img src="MyProject-img/frontend mentor/simple_recipe.jpg" class="img-fluid" alt="Simple Recipe">
-              <div class="portfolio-links">
-                <a href="MyProject-img/frontend mentor/simple_recipe.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="https://pdineshmurugan.github.io/RecipePage/" title="Simple Recipe Page"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-           <!-- rest Countries -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
-            <div class="portfolio-wrap">
-              <img src="MyProject-img/frontend mentor/rest.png" class="img-fluid" alt="Rest Countries Page">
-              <div class="portfolio-links">
-                <a href="MyProject-img/frontend mentor/rest.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Rest Countries Pag"><i class="bx bx-plus"></i></a>
-                <a href="https://pdineshmurugan.github.io/REST_Countries/" title="Rest Countries"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <!-- sunny site -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
-            <div class="portfolio-wrap">
-              <img src="MyProject-img/frontend mentor/sunny_site.jpg" class="img-fluid" alt="Sunny Side site">
-              <div class="portfolio-links">
-                <a href="MyProject-img/frontend mentor/sunny_site.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="sunny side site"><i class="bx bx-plus"></i></a>
-                <a href="https://pdineshmurugan.github.io/SunnySide/" title="Sunny Side Page"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <!-- Age Calculator Site-->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
-            <div class="portfolio-wrap">
-              <img src="MyProject-img/frontend mentor/age_calculator.jpg" class="img-fluid" alt="Sunny Side site">
-              <div class="portfolio-links">
-                <a href="MyProject-img/frontend mentor/age_calculator.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="sunny side site"><i class="bx bx-plus"></i></a>
-                <a href="https://pdineshmurugan.github.io/Age_calculator/" title="Age Calculator Page"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <!--Testimonial Site-->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
-            <div class="portfolio-wrap">
-              <img src="MyProject-img/frontend mentor/Testimonial.jpg" class="img-fluid" alt="Sunny Side site">
-              <div class="portfolio-links">
-                <a href="MyProject-img/frontend mentor/Testimonial.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="sunny side site"><i class="bx bx-plus"></i></a>
-                <a href="https://pdineshmurugan.github.io/testimonials-grid-section-main/" title="Testimonials Grid Page"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <!--Rating Site-->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
-            <div class="portfolio-wrap">
-              <img src="MyProject-img/frontend mentor/rating.jpg" class="img-fluid" alt="Sunny Side site">
-              <div class="portfolio-links">
-                <a href="MyProject-img/frontend mentor/rating.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="sunny side site"><i class="bx bx-plus"></i></a>
-                <a href="https://pdineshmurugan.github.io/-Interactive-rating-component/" title="Interactive Rating Page"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-<!-- internship project -->
-  <!-- heatfleet -->
-<div class="col-lg-4 col-md-6 portfolio-item filter-internship">
-
-  <div class="portfolio-wrap">
-    <img src="MyProject-img/heatfleet_landing_page.png" class="img-fluid" alt="HeatFleet Landing Page Preview">
-    <div class="portfolio-links">
-      <a href="MyProject-img/heatfleet_landing_page.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="HeatFleet Landing Page"><i class="bx bx-plus"></i></a>
-      <a href="https://heatfleet.com" title="HeatFleet Website"><i class="bx bx-link"></i></a>
-    </div>
-  </div>
-  </div>
-  <!-- heatfleet tv 1 -->
-  <div class="col-lg-4 col-md-6 portfolio-item filter-internship">
-  <div class="portfolio-wrap">
-    <img src="MyProject-img/heatweeksTv1.png" class="img-fluid" alt="HeatFleet TV Page Preview">
-    <div class="portfolio-links">
-      <a href="MyProject-img/heatweeksTv1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="HeatFleet TV Page"><i class="bx bx-plus"></i></a>
-      <a href="https://heatfleet.com/HeatWeek_Tv.html" title="HeatFleet TV"><i class="bx bx-link"></i></a>
-    </div>
-  </div>
-</div>
- <!-- heatfleet tv 2 -->
-<div class="col-lg-4 col-md-6 portfolio-item filter-internship">
-  <div class="portfolio-wrap">
-    <img src="MyProject-img/heatweeksTv2.png" class="img-fluid" alt="HeatFleet TV Inner Page Preview">
-    <div class="portfolio-links">
-      <a href="MyProject-img/heatweeksTv2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="HeatFleet TV Page"><i class="bx bx-plus"></i></a>
-      <a href="https://heatfleet.com/HeatWeek_Tv.html" title="HeatFleet TV"><i class="bx bx-link"></i></a>
-    </div>
-  </div>
-</div>
-
-
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-    </section><!-- End Services Section -->
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>
-            "Feel free to get in touch! Whether you have a project in mind or just want to connect, 
-            I'm always open to new opportunities. Reach out via email at <a href="mailto:dineshmurugan518@gmail.com" class="email-link" style="color: #0056b3;">dineshmurugan518@gmail.com</a>
-            or connect 
-            with me on LinkedIn for professional inquiries."</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>5/129-3 Amman Kovil Street,puthiyamputhur,Tuticorin-TN</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>dineshmurugan518@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 6382410301</p>
-              </div>
-              <iframe width="350" height="450" style="border:0" loading="lazy" allowfullscreen
-              src="https://maps.google.com/maps?q=5/129/3%20amman%20kovil%20street,puthiamputhur&t=&z=13&ie=UTF8&iwloc=&output=embed"  title="Map show my location"></iframe>
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="https://postmail.invotes.com/send" method="post" id="email_form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="extra_fullName" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="email">Your Email</label>
-                  <input type="email" class="form-control" name="extra_email" id="email" required>
-                </div>
-              </div>
-              
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-            
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" name="text" id="message" rows="10" required></textarea>
-              </div>
-            
-              <input type="hidden" name="access_token" value="ulc2j1b68xt1fydxu9luowc6" />
-              <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
-              <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
-            
-              <div class="my-3">
-                <div class="error-message"></div>
-              </div>
-              
-              <button class="button-8 text-center" role="button">Send</button>
-            </form>
-            
-            <style>
-            .button-8 {
-              padding: 20px 40px;
-              background-color: #e1ecf4;
-              border-radius: 3px;
-              border: 1px solid #7aa7c7;
-              box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
-              box-sizing: border-box;
-              color: #39739d;
-              cursor: pointer;
-              display: inline-block;
-              left: 170px;
-              font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
-              font-size: 18px;
-              font-weight: 400;
-              line-height: 1.15385;
-              margin: 0;
-              outline: none;
-              position: relative;
-              text-align: center;
-              text-decoration: none;
-              user-select: none;
-              -webkit-user-select: none;
-              touch-action: manipulation;
-              vertical-align: baseline;
-              white-space: nowrap;
-            }
-            
-            .button-8:hover,
-            .button-8:focus {
-              background-color: #b3d3ea;
-              color: #2c5777;
-            }
-            
-            .button-8:focus {
-              box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
-            }
-            
-            .button-8:active {
-              background-color: #a0c7e4;
-              box-shadow: none;
-              color: #2c5777;
-            }
-            </style>
-            
-          </div>
-
-        </div>
-
-      </div>
-       </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Dinesh Murugan</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
-  <script src="assets/vendor/aos/aos.js" defer></script>
-
-  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
-  <script src="assets/vendor/typed.js/typed.umd.js" defer> </script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js" defer></script>
-
-  <!-- Template Main JS File -->
-
-  <script src="assets/js/main.js" defer></script>
+  <!-- Google Analytics: async & non-blocking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-56ZY3RM4MH"></script>
   <script>
-    // service-worker.js registration
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service-worker.js')
-    .then(() => console.log("Service Worker Registered"));
-}
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-56ZY3RM4MH');
+
+    // Social traffic tracking: fires after load
+    window.addEventListener('load', function() {
+      if (window.location.search.includes('fbclid')) {
+        let ref = document.referrer.toLowerCase(), platform = 'Facebook';
+        if (ref.includes('instagram.com')) platform = 'Instagram';
+        else if (ref.includes('threads.net')) platform = 'Threads';
+        gtag('event', 'fbclid_visit', { facebook_platform: platform });
+        window.history.replaceState({}, document.title, window.location.pathname);
+      }
+    });
+  </script>
+
+  <!-- Hotjar: load after the page becomes interactive -->
+  <script>
+    window.addEventListener('load', function () {
+      (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:5332420,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    });
+  </script>
+
+  </head>
+
+  <!-- <script>
+    // Set this to true when maintenance mode is active
+    const isMaintenance = true;
+
+    if (isMaintenance && window.location.pathname !== '/maintenance.html') {
+      window.location.href = '/maintenance.html';
+    }
+  </script> -->
+
+
+  <body>
+
+
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="d-flex flex-column">
+
+        <div class="profile">
+          <img src="assets/img/profile-img.jpg" alt="Dinesh Murugan Profile" class="img-fluid rounded-circle">
+          <h1 ><a href="index.html">P Dinesh Murugan</a></h1>
+          <div class="social-links mt-3 text-center">
+                <a href="https://leetcode.com/u/dineshmurugan518/" target="_blank" title="LeetCode Profile">
+                <!-- <svg fill="#ffffff" width="24px" height="24px" viewBox="-2.4 -2.4 28.80 28.80" role="img" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" style="vertical-align: middle; margin-top: -4px;">
+                  <title>LeetCode icon</title>
+                  <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zM20.811 13.01H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"></path>
+                </svg> -->
+                              <i class="bx bx-code" aria-label="View my LeetCode profile"></i>
+                </a>
+
+
+            <a href="https://www.instagram.com/_dinesh.official/" class="instagram" aria-label="Follow me on Instagram" ><i class="bx bxl-instagram"></i></a>
+
+            
+            
+            <a href="https://www.linkedin.com/in/dineshmuruganp" class="linkedin"><i class="bx bxl-linkedin" aria-label="Follow me on LinkedIn"></i></a>
+            <a href="https://github.com/PDineshMurugan" class="github" aria-label="Follow me on GitHub">
+              <i class="bx bxl-github" aria-label="Follow me on GitHub"></i></a>
+          </div>
+        </div>
+
+        <nav id="navbar" class="nav-menu navbar">
+          <ul>
+            <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+            <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+        
+            <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          </ul>
+        </nav><!-- .nav-menu -->
+      </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+      <div class="hero-container" data-aos="fade-in">
+        <h1>P Dinesh Murugan</h1>
+        <p style="margin-bottom: auto;">I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer">Developer</span></p>
+        <span style="color: white; font-size: 12px; margin: auto;">Ready for a Full-Time Role — <a href="#contact" class="btn btn-primary mt-4"> Let’s Connect!</a></span>
+
+      </div>
+    </section><!-- End Hero -->
+
+    <main id="main">
+
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+
+          <div class="section-title">
+            <h2>About</h2>
+            <p>    
+            I'm Dinesh Murugan, a passionate frontend developer skilled in Angular, HTML, CSS, JavaScript, and Strapi, with a background in Electrical and Electronics Engineering. I’ve worked on real-time projects like HeatFleet during my internship and regularly build UI challenges on Frontend Mentor. I'm actively seeking a full-time frontend developer role to grow and contribute to impactful projects.            
+    </div>
+
+          <div class="row">
+            <div class="col-lg-4" data-aos="fade-right">
+              <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Dinesh Murugan Profile">
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+              <h3> Web Developer</h3>
+              <p class="fst-italic">
+                I'm dedicated to continual learning and growth, regularly attending workshops, online courses, and hackathons to stay updated with the latest industry trends and technologies. I'm excited about the ever-evolving nature of web development and the possibilities it holds.
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 6382 410 301</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Tamil Nadu, India</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Electrical and Electronics Engineering</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span id="emailLink">dineshmurugan518@gmail.com</span>
+
+                      <script>
+                      document.getElementById("emailLink").addEventListener("click", function() {
+                        var email = "dineshmurugan518@gmail.com";
+                        window.location.href = "mailto:" + email;
+                      });
+                      </script>
+                  </ul>
+                </div>
+              </div>
+              <p>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section><!-- End About Section -->
+
+      
+      </section><!-- End Facts Section --> 
+
+  <!-- ======= Skills Section ======= -->
+  <section id="skills" class="skills section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Skills</h2>
+        <p>
+          Proficient in front-end development with <strong>HTML, CSS, SCSS, JavaScript</strong>, and frameworks like <strong>Angular</strong>. Skilled in scripting with <strong>TypeScript</strong> and backend integration using <strong>Strapi</strong>. Strong understanding of website optimization through <strong>SEO practices</strong>.
+        </p>
+      </div>
+
+      <div class="row skills-content">
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="progress">
+            <span class="skill">HTML <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="HTML 90%"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">CSS / SCSS <i class="val">85%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="CSS / SCSS 85%"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">JavaScript <i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript 70%"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Angular <i class="val">75%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Angular 75%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="progress">
+            <span class="skill">TypeScript <i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="TypeScript 70%"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Strapi (Backend Integration) <i class="val">65%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Strapi 65%"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">SEO Practices <i class="val">65%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="SEO Practices 65%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-title mt-5">
+        <h2>Tools</h2>
+        <p>
+          Experienced with version control using <strong>Git, GitHub, GitLab</strong>, and website analytics tools like <strong>Google Analytics 4 (GA4)</strong>, <strong>Google Search Console</strong>, and <strong>Hotjar</strong>. Proficient in design tools such as <strong>Photoshop 7.0</strong> and <strong>Canva</strong>.
+        </p>
+      </div>
+
+      <div class="row skills-content">
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="progress">
+            <span class="skill">Git / GitHub / GitLab <i class="val">75%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Git / GitHub / GitLab 75%"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Photoshop & Canva <i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Photoshop & Canva 70%"></div>
+            </div>
+          </div>        
+
+          <div class="progress">
+            <span class="skill">Google Analytics 4 (GA4) <i class="val">65%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Google Analytics 4 (GA4) 65%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="progress">
+            <span class="skill">Google Search Console <i class="val">65%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Google Search Console 65%"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Hotjar <i class="val">65%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Hotjar 65%"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Skills Section -->
+
+
+
+      <!-- ======= Resume Section ======= -->
+      <section id="resume" class="resume section">
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Resume</h2>
+            <p>
+              I am a highly motivated and passionate graduate with a Bachelor of Engineering in Electrical and Electronics Engineering, completed in April 2025. With a strong foundation in front-end development and hands-on experience using <strong>Angular, HTML, CSS, JavaScript</strong>, and tools like <strong>Strapi, Git, and SEO platforms</strong>, I am actively seeking a frontend developer role to contribute to real-world projects and grow in a dynamic tech environment.
+            </p>
+
+          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="resume-title">Sumary</h3>
+        <div class="resume-item pb-0">
+          <h4>Dinesh Murugan P</h4>
+          <p><em>I hold an <a href="https://coursera.org/share/2e4dcfd49bd4292a3cc46508fd15d86d">IBM certification</a> in Web Development and have practical experience through internships at System Star LLC. I have completed over <a href="https://www.frontendmentor.io/profile/PDineshMurugan">15+ Frontend Mentor projects</a>  and solved 55+ Java problems on <a href="https://leetcode.com/u/dineshmurugan518/">LeetCode</a> , demonstrating strong analytical and problem-solving skills. I develop intuitive user interfaces and deliver engaging digital experiences while staying current with industry trends.</em></p>
+          <ul>
+            <li>Tuticorin, Tamil Nadu</li>
+            <li>+91 6382 410 301</li>
+            <li>dineshmurugan518@gmail.com</li>
+          </ul>
+        </div><!-- End Resume Item -->
+
+        <h3 class="resume-title">Education</h3>
+        <div class="resume-item">
+          <h4>B.E. in Electrical and Electronics Engineering</h4>
+          <h5>2021 - 2025</h5>
+          <p><em>Kongunadu College of Engineering and Technology, Trichy</em></p>
+          <p>Secured 79% aggregate.</p>
+        </div><!-- End Resume Item -->
+      </div>
+
+  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+    <h3 class="resume-title">Internship Experience</h3>
+    <div class="resume-item">
+      <h4>Software Developer Intern</h4>
+      <h5>Dec 2024 – June 2025</h5>
+      <p><em>System Star LLC</em></p>
+      <ul>
+        <li>Built responsive UI components and migrated internal admin panel from HTML to Angular for the HeatFleet platform using Angular and SCSS.</li>
+        <li>Led a full homepage redesign aligned with modern UI/UX standards to improve usability and performance.</li>
+        <li>Integrated structured data and resolved SEO issues to boost search engine visibility.</li>
+        <li>Utilized tools like Strapi, Google Search Console, GA4, Google Ads, and Hotjar to enhance content management and user behavior analysis.</li>
+      </ul>
+    </div><!-- End Resume Item -->
+  </div>
+
+    </div>
+        <button class="button-85" role="button">  <a href="DineshMurugan.pdf" download=""  data-aos="zoom-in" data-aos-duration="200">Download Resume</a></button>
+  </div>
+
+          <!-- HTML !-->
+    
+
+          <style>
+          .button-85 {
+            padding: 0.6em 2em;
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+            background: #111111;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+          }
+          .button-85 a{
+            color: white;
+          }
+
+          .button-85:before {
+            content: "";
+            background: linear-gradient(
+              45deg,
+              #ff0000,
+              #ff7300,
+              #fffb00,
+              #48ff00,
+              #00ffd5,
+              #002bff,
+              #7a00ff,
+              #ff00c8,
+              #ff0000
+            );
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing-button-85 20s linear infinite;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 10px;
+          }
+
+          @keyframes glowing-button-85 {
+            0% {
+              background-position: 0 0;
+            }
+            50% {
+              background-position: 400% 0;
+            }
+            100% {
+              background-position: 0 0;
+            }
+          }
+
+          .button-85:after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #222;
+            left: 0;
+            top: 0;
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+          }
+          </style>
+        
+      </section><!-- End Resume Section -->
+
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
+
+          <div class="section-title">
+            <h2>Portfolio</h2>
+            <p>
+    "Welcome to my digital realm! Explore a curated collection showcasing my expertise in crafting captivating web experiences.
+    From sleek cards to immersive pages, each creation embodies innovation and functionality. Join me on a journey through a spectrum of interactive designs that elevate user experience and redefine online presence."</p> </div>
+
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active other-tab" >All</li>
+                <li data-filter=".filter-mentor" class="other-tab">Frontend Mentor</li>
+                <li data-filter=".filter-course" class="other-tab">Course</li>
+                <li data-filter=".filter-internship" id="internship-tab">Internship Project</li>
+                <!-- <li data-filter=".filter-mentor">Frontend Mentors Projects</li>
+                <li data-filter=".filter-course">Course Projects</li>
+                <li data-filter=".filter-web">Internship Real Time project</li> -->
+              </ul>
+            </div>
+          </div>
+    <div id="project-description" style="display: none;" >
+    <p>As a frontend developer intern at <strong>System Star LLC</strong>, I played a key role in delivering real-time production-ready features for <strong>HeatFleet</strong>, a commercial fleet management platform. My responsibilities included both <strong>UI development</strong> and <strong>technical SEO optimization</strong>.</p>
+
+    <h4>Key Highlights:</h4>
+    <ul>
+      <li>Transformed the entire HeatFleet landing page from Figma to production, implementing responsive layouts, optimized media, and interactive UI components using <strong>Angular</strong> and <strong>TypeScript</strong>.</li>
+      <li>Redesigned everything from header to footer, ensuring accessibility, performance, and cross-device compatibility.</li>
+      <li>Built <strong>HeatFleet TV</strong> (<a href="https://heatfleet.com/HeatWeek_Tv.html" target="_blank">View HeatFleet TV</a>) — a dedicated video section to host and showcase media content, powered by our custom backend APIs.</li>
+      <li>Conducted manual testing to verify visual and functional consistency across all major browsers and devices.</li>
+      <li>Integrated <strong>Google Analytics</strong> to analyze traffic behavior and measure engagement.</li>
+      <li>Resolved <strong>Google Search Console</strong> issues, improved search indexing, and optimized the visibility of images, videos, and datasets.</li>
+      <li>Collaborated with designers and backend developers to ensure accurate Figma-to-code fidelity and seamless API communication.</li>
+    </ul>
+  </div>
+  <script>
+  const internshipTab = document.getElementById("internship-tab");
+  const descriptionBox = document.getElementById("project-description");
+  const otherTabs = document.querySelectorAll(".other-tab");
+
+  // Show description when Internship clicked
+  internshipTab.addEventListener("click", () => {
+    descriptionBox.style.display = "block";
+  });
+
+  // Hide description when any other tab clicked
+  otherTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      descriptionBox.style.display = "none";
+    });
+  });
 
   </script>
-  <!-- Google Analytics with Consent Mode v2 (delays cookies until accepted) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-56ZY3RM4MH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  // Consent Mode: no storage by default (privacy-first, still allows basic measurement)
-  gtag('consent', 'default', {
-    ad_storage: 'denied',
-    analytics_storage: 'denied'
-  });
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+  <!-- course projects -->
 
-  gtag('js', new Date());
-  gtag('config', 'G-56ZY3RM4MH', {
-    anonymize_ip: true, // Best practice: mask IP for GDPR and audits
-    transport_type: 'beacon', // Best-practice transport
-    allow_google_signals: false // Block cross-site; stricter privacy
-  });
+  <!-- tech shop -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-course">
+              <div class="portfolio-wrap">
+                <img src="MyProject-img/TechShop.jpeg" class="img-fluid" alt="TechShop Page">
+                <div class="portfolio-links">
+                  <a href="MyProject-img/TechShop.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="https://pdineshmurugan.github.io/TechShop/TechShop-main/Project-2%20Tech%20Homepage/index.html" title="Tech Shop"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
 
-  // fbclid event tracking (your custom logic)
-  if(window.location.search.includes('fbclid')){
-    let ref=document.referrer.toLowerCase(),platform='Facebook';
-    if(ref.includes('instagram.com')) platform='Instagram';
-    else if(ref.includes('threads.net')) platform='Threads';
-    gtag('event','fbclid_visit',{facebook_platform: platform});
-    window.history.replaceState({},document.title,window.location.pathname);
+  <!-- frontend Mentor Projects-->
+            <!-- Product Preview card -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
+              <div class="portfolio-wrap">
+                <img src="MyProject-img/frontend mentor/ProductCard.jpg" class="img-fluid" alt="Prodcut Preview Page">
+                <div class="portfolio-links">
+                  <a href="MyProject-img/frontend mentor/ProductCard.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="https://pdineshmurugan.github.io/Product-preview-card-component/" title="Prodcut Preview Card"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Simple Recipe -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
+              <div class="portfolio-wrap">
+                <img src="MyProject-img/frontend mentor/simple_recipe.jpg" class="img-fluid" alt="Simple Recipe">
+                <div class="portfolio-links">
+                  <a href="MyProject-img/frontend mentor/simple_recipe.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="https://pdineshmurugan.github.io/RecipePage/" title="Simple Recipe Page"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- rest Countries -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
+              <div class="portfolio-wrap">
+                <img src="MyProject-img/frontend mentor/rest.png" class="img-fluid" alt="Rest Countries Page">
+                <div class="portfolio-links">
+                  <a href="MyProject-img/frontend mentor/rest.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Rest Countries Pag"><i class="bx bx-plus"></i></a>
+                  <a href="https://pdineshmurugan.github.io/REST_Countries/" title="Rest Countries"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- sunny site -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
+              <div class="portfolio-wrap">
+                <img src="MyProject-img/frontend mentor/sunny_site.jpg" class="img-fluid" alt="Sunny Side site">
+                <div class="portfolio-links">
+                  <a href="MyProject-img/frontend mentor/sunny_site.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="sunny side site"><i class="bx bx-plus"></i></a>
+                  <a href="https://pdineshmurugan.github.io/SunnySide/" title="Sunny Side Page"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Age Calculator Site-->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
+              <div class="portfolio-wrap">
+                <img src="MyProject-img/frontend mentor/age_calculator.jpg" class="img-fluid" alt="Sunny Side site">
+                <div class="portfolio-links">
+                  <a href="MyProject-img/frontend mentor/age_calculator.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="sunny side site"><i class="bx bx-plus"></i></a>
+                  <a href="https://pdineshmurugan.github.io/Age_calculator/" title="Age Calculator Page"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--Testimonial Site-->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
+              <div class="portfolio-wrap">
+                <img src="MyProject-img/frontend mentor/Testimonial.jpg" class="img-fluid" alt="Sunny Side site">
+                <div class="portfolio-links">
+                  <a href="MyProject-img/frontend mentor/Testimonial.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="sunny side site"><i class="bx bx-plus"></i></a>
+                  <a href="https://pdineshmurugan.github.io/testimonials-grid-section-main/" title="Testimonials Grid Page"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--Rating Site-->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
+              <div class="portfolio-wrap">
+                <img src="MyProject-img/frontend mentor/rating.jpg" class="img-fluid" alt="Sunny Side site">
+                <div class="portfolio-links">
+                  <a href="MyProject-img/frontend mentor/rating.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="sunny side site"><i class="bx bx-plus"></i></a>
+                  <a href="https://pdineshmurugan.github.io/-Interactive-rating-component/" title="Interactive Rating Page"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  <!-- internship project -->
+    <!-- heatfleet -->
+  <div class="col-lg-4 col-md-6 portfolio-item filter-internship">
+
+    <div class="portfolio-wrap">
+      <img src="MyProject-img/heatfleet_landing_page.png" class="img-fluid" alt="HeatFleet Landing Page Preview">
+      <div class="portfolio-links">
+        <a href="MyProject-img/heatfleet_landing_page.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="HeatFleet Landing Page"><i class="bx bx-plus"></i></a>
+        <a href="https://heatfleet.com" title="HeatFleet Website"><i class="bx bx-link"></i></a>
+      </div>
+    </div>
+    </div>
+    <!-- heatfleet tv 1 -->
+    <div class="col-lg-4 col-md-6 portfolio-item filter-internship">
+    <div class="portfolio-wrap">
+      <img src="MyProject-img/heatweeksTv1.png" class="img-fluid" alt="HeatFleet TV Page Preview">
+      <div class="portfolio-links">
+        <a href="MyProject-img/heatweeksTv1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="HeatFleet TV Page"><i class="bx bx-plus"></i></a>
+        <a href="https://heatfleet.com/HeatWeek_Tv.html" title="HeatFleet TV"><i class="bx bx-link"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- heatfleet tv 2 -->
+  <div class="col-lg-4 col-md-6 portfolio-item filter-internship">
+    <div class="portfolio-wrap">
+      <img src="MyProject-img/heatweeksTv2.png" class="img-fluid" alt="HeatFleet TV Inner Page Preview">
+      <div class="portfolio-links">
+        <a href="MyProject-img/heatweeksTv2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="HeatFleet TV Page"><i class="bx bx-plus"></i></a>
+        <a href="https://heatfleet.com/HeatWeek_Tv.html" title="HeatFleet TV"><i class="bx bx-link"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+
+          </div>
+
+        </div>
+      </section><!-- End Portfolio Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container">
+      </section><!-- End Services Section -->
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>
+              "Feel free to get in touch! Whether you have a project in mind or just want to connect, 
+              I'm always open to new opportunities. Reach out via email at <a href="mailto:dineshmurugan518@gmail.com" class="email-link" style="color: #0056b3;">dineshmurugan518@gmail.com</a>
+              or connect 
+              with me on LinkedIn for professional inquiries."</p>
+          </div>
+
+          <div class="row" data-aos="fade-in">
+
+            <div class="col-lg-5 d-flex align-items-stretch">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>5/129-3 Amman Kovil Street,puthiyamputhur,Tuticorin-TN</p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>dineshmurugan518@gmail.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+91 6382410301</p>
+                </div>
+                <iframe width="350" height="450" style="border:0" loading="lazy" allowfullscreen
+                src="https://maps.google.com/maps?q=5/129/3%20amman%20kovil%20street,puthiamputhur&t=&z=13&ie=UTF8&iwloc=&output=embed"  title="Map show my location"></iframe>
+              </div>
+
+            </div>
+
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="extra_fullName" class="form-control" id="name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="email">Your Email</label>
+                    <input type="email" class="form-control" name="extra_email" id="email" required>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" required>
+                </div>
+              
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" name="text" id="message" rows="10" required></textarea>
+                </div>
+              
+                <input type="hidden" name="access_token" value="ulc2j1b68xt1fydxu9luowc6" />
+                <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+              
+                <div class="my-3">
+                  <div class="error-message"></div>
+                </div>
+                
+                <button class="button-8 text-center" role="button">Send</button>
+              </form>
+              
+              <style>
+              .button-8 {
+                padding: 20px 40px;
+                background-color: #e1ecf4;
+                border-radius: 3px;
+                border: 1px solid #7aa7c7;
+                box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+                box-sizing: border-box;
+                color: #39739d;
+                cursor: pointer;
+                display: inline-block;
+                font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 1.15385;
+                margin: 0;
+                outline: none;
+                position: relative;
+                text-align: center;
+                text-decoration: none;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                vertical-align: baseline;
+                white-space: nowrap;
+              }
+              
+              .button-8:hover,
+              .button-8:focus {
+                background-color: #b3d3ea;
+                color: #2c5777;
+              }
+              
+              .button-8:focus {
+                box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+              }
+              
+              .button-8:active {
+                background-color: #a0c7e4;
+                box-shadow: none;
+                color: #2c5777;
+              }
+              </style>
+              
+            </div>
+
+          </div>
+
+        </div>
+        </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Dinesh Murugan</span></strong>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+          <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
+        </div>
+      </div>
+    </footer><!-- End  Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+    <script src="assets/vendor/aos/aos.js" defer></script>
+
+    <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+    <script src="assets/vendor/typed.js/typed.umd.js" defer> </script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js" defer></script>
+
+    <!-- Template Main JS File -->
+
+    <script src="assets/js/main.js" defer></script>
+    <script>
+      // service-worker.js registration
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(() => console.log("Service Worker Registered"));
   }
 
-  /** When consent is given, unlock full Analytics (called from banner) */
-  function enableAnalytics() {
-    gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'granted' });
-    // Optionally: send a GA4 event for consent
-    gtag('event', 'analytics_consent_granted');
-  }
+    </script>
+    <!-- Google Analytics with Consent Mode v2 (delays cookies until accepted) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-56ZY3RM4MH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    // Consent Mode: no storage by default (privacy-first, still allows basic measurement)
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied'
+    });
 
-  // Optional: Auto-enable/deny based on prior selection
-  (function(){
-    var consent = localStorage.getItem('analytics_consent');
-    if(consent === 'granted'){
-      enableAnalytics();
+    gtag('js', new Date());
+    gtag('config', 'G-56ZY3RM4MH', {
+      anonymize_ip: true, // Best practice: mask IP for GDPR and audits
+      transport_type: 'beacon', // Best-practice transport
+      allow_google_signals: false // Block cross-site; stricter privacy
+    });
+
+    // fbclid event tracking (your custom logic)
+    if(window.location.search.includes('fbclid')){
+      let ref=document.referrer.toLowerCase(),platform='Facebook';
+      if(ref.includes('instagram.com')) platform='Instagram';
+      else if(ref.includes('threads.net')) platform='Threads';
+      gtag('event','fbclid_visit',{facebook_platform: platform});
+      window.history.replaceState({},document.title,window.location.pathname);
     }
-    if(consent === 'denied'){
-      gtag('consent', 'update', { analytics_storage: 'denied', ad_storage: 'denied' });
+
+    /** When consent is given, unlock full Analytics (called from banner) */
+    function enableAnalytics() {
+      gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'granted' });
+      // Optionally: send a GA4 event for consent
+      gtag('event', 'analytics_consent_granted');
     }
-  })();
-</script>
 
-<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:#222;color:#fff;padding:1em;z-index:9999;text-align:center;display:none;">
-  This site uses cookies for analytics. <button id="accept-cookies" style="margin-left:1em;">Accept</button>
-  <button id="decline-cookies" style="margin-left:1em;">Decline</button>
-</div>
-<script>
-  // Show banner if not previously set
-  if (!localStorage.getItem('analytics_consent')) {
-    document.getElementById('cookie-banner').style.display = 'block';
-  }
+    // Optional: Auto-enable/deny based on prior selection
+    (function(){
+      var consent = localStorage.getItem('analytics_consent');
+      if(consent === 'granted'){
+        enableAnalytics();
+      }
+      if(consent === 'denied'){
+        gtag('consent', 'update', { analytics_storage: 'denied', ad_storage: 'denied' });
+      }
+    })();
+  </script>
 
-  document.getElementById('accept-cookies').onclick = function() {
-    localStorage.setItem('analytics_consent', 'granted');
-    enableAnalytics(); // Enable GA4
-    document.getElementById('cookie-banner').style.display = 'none';
-  };
-  document.getElementById('decline-cookies').onclick = function() {
-    localStorage.setItem('analytics_consent', 'denied');
-    document.getElementById('cookie-banner').style.display = 'none';
-  };
-</script>
+  <div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:#222;color:#fff;padding:1em;z-index:9999;text-align:center;display:none;">
+    This site uses cookies for analytics. <button id="accept-cookies" style="margin-left:1em;">Accept</button>
+    <button id="decline-cookies" style="margin-left:1em;">Decline</button>
+  </div>
+  <script>
+    // Show banner if not previously set
+    if (!localStorage.getItem('analytics_consent')) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
 
-</body>
+    document.getElementById('accept-cookies').onclick = function() {
+      localStorage.setItem('analytics_consent', 'granted');
+      enableAnalytics(); // Enable GA4
+      document.getElementById('cookie-banner').style.display = 'none';
+    };
+    document.getElementById('decline-cookies').onclick = function() {
+      localStorage.setItem('analytics_consent', 'denied');
+      document.getElementById('cookie-banner').style.display = 'none';
+    };
+  </script>
 
-</html>
+  </body>
+
+  </html>
