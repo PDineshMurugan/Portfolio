@@ -25,8 +25,10 @@
 
 
   <!-- Preload fonts for speed -->
-  <link rel="preload" href="assets/fonts/poppins-v23-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/poppins-v23-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/poppins-v23-latin-regular.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/poppins-v23-latin-600.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
 
   <!-- Inline above-the-fold critical CSS -->
   <style>
@@ -134,7 +136,7 @@
   </script>
 
   <!-- Hotjar: load after the page becomes interactive -->
-  <script>
+  <!-- <script>
     window.addEventListener('load', function () {
       (function (h, o, t, j, a, r) {
         h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
@@ -145,7 +147,7 @@
         a.appendChild(r);
       })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     });
-  </script>
+  </script> -->
 
 </head>
 
@@ -213,9 +215,10 @@
     <div class="hero-container" data-aos="fade-in">
       <h1>P Dinesh Murugan</h1>
       <p style="margin-bottom: auto;">I'm <span class="typed"
-          data-typed-items="Designer, Developer, Freelancer">Developer</span></p>
-      <span style="color: white; font-size: 12px; margin: auto;">Ready for a Full-Time Role — <a href="#contact"
-          class="btn btn-primary mt-4"> Let’s Connect!</a></span>
+          data-typed-items="Frontend Developer, Web Designer, Angular Enthusiast, Tech Explorer">Developer</span>
+      </p>
+      <!-- <span style="color: white; font-size: 12px; margin: auto;">Ready for a Full-Time Role — <a href="#contact"
+          class="btn btn-primary mt-4"> Let’s Connect!</a></span> -->
 
     </div>
   </section><!-- End Hero -->
@@ -797,11 +800,21 @@
         <div class="section-title">
           <h2>Contact</h2>
           <p>
-            "Feel free to get in touch! Whether you have a project in mind or just want to connect,
-            I'm always open to new opportunities. Reach out via email at <a href="mailto:dineshmurugan518@gmail.com"
-              rel="noopener" target="_blank" class="email-link" style="color: #0056b3;">dineshmurugan518@gmail.com</a>
-            or connect
-            with me on LinkedIn for professional inquiries."</p>
+            Feel free to get in touch! Whether you have a project in mind or just want to connect,
+            I'm always open to new opportunities. Reach out via email at
+            <a href="mailto:dineshmurugan518@gmail.com" rel="noopener" target="_blank" class="email-link"
+              style="color: #0056b3; text-decoration: underline;"
+              aria-label="Email Dinesh Murugan at dineshmurugan518@gmail.com">
+              dineshmurugan518@gmail.com
+            </a>
+            or connect with me on
+            <a href="https://www.linkedin.com/in/dineshmurugan/" target="_blank" rel="noopener"
+              style="color: #0077b5; text-decoration: underline;" aria-label="Connect with Dinesh on LinkedIn">
+              LinkedIn
+            </a>
+            for professional inquiries.
+          </p>
+
         </div>
 
         <div class="row" data-aos="fade-in">
