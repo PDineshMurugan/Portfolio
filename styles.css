@@ -1,0 +1,135 @@
+    /* Inline above-the-fold critical CSS  */
+ #hero {
+      min-height: 100vh;
+      background: url('assets/img/hero-bg.webp') center center no-repeat;
+      background-size: cover;
+    }
+
+    #hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+    }
+
+    @media (max-width:768px) {
+      #hero h1 {
+        font-size: 24px;
+      }
+    }
+    
+
+    /* button */
+                  .button-85 {
+      padding: 0.6em 2em;
+      border: none;
+      outline: none;
+      color: rgb(255, 255, 255);
+      background: #111111;
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 10px;
+      -webkit-user-select: none;
+      user-select: none;
+      touch-action: manipulation;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 500;
+      transition: transform 0.2s ease;
+    }
+
+    .button-85:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-85:before {
+      content: "";
+      background: linear-gradient(45deg,
+          #ff0000,
+          #ff7300,
+          #fffb00,
+          #48ff00,
+          #00ffd5,
+          #002bff,
+          #7a00ff,
+          #ff00c8,
+          #ff0000);
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      -webkit-filter: blur(5px);
+      filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing-button-85 20s linear infinite;
+      transition: opacity 0.3s ease-in-out;
+      border-radius: 10px;
+    }
+
+    @keyframes glowing-button-85 {
+      0% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 400% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+    }
+
+    .button-85:after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #222;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }
+
+    .resume-item {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .resume-item:last-child {
+      border-bottom: none;
+    }
+
+    .resume-item h4 {
+      color: #0563bb;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .resume-item h5 {
+      font-size: 1rem;
+      background: #f7f7f7;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      border-radius: 4px;
+    }
+
+    .resume-item ul {
+      padding-left: 1.5rem;
+    }
+
+    .resume-item ul li {
+      margin-bottom: 0.5rem;
+      position: relative;
+    }
+
+    .resume-title {
+      color: #0563bb;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #0563bb;
+      display: inline-block;
+    }
