@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Dinesh Murugan | Frontend Angular Web Developer</title>
+  <title>Dinesh Murugan | Enterprise Angular Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-    content="Portfolio of Dinesh Murugan: Angular developer, building dynamic, user-friendly web applications. Explore projects, technical skills, and achievements.">
+    content="Professional Portfolio of Dinesh Murugan: Specialized Angular Developer building scalable enterprise HR platforms and high-performance web applications with RxJS and TypeScript.">
   <meta name="author" content="Dinesh Murugan">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://dineshmurugan.netlify.app">
@@ -31,6 +31,19 @@
     crossorigin="anonymous">
 
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Critical CSS Inlined -->
+  <style>
+    :root { scroll-behavior: smooth; }
+    body { font-family: "Poppins", sans-serif; color: #272829; margin: 0; }
+    #header { position: fixed; top: 0; left: 0; bottom: 0; width: 300px; background: #040b14; z-index: 9997; transition: all .5s; overflow-y: auto; padding: 0 15px; }
+    #hero { width: 100%; height: 100vh; background: url("assets/img/hero-bg.webp") top center; background-size: cover; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; }
+    #hero:before { content: ""; background: rgba(5, 13, 24, 0.3); position: absolute; bottom: 0; top: 0; left: 0; right: 0; z-index: 1; }
+
+    #main { margin-left: 300px; }
+    @media (max-width: 1199px) { #header { left: -300px; } #main { margin-left: 0; } }
+    @media (max-width: 768px) { #hero h1 { font-size: 28px; line-height: 36px; } }
+  </style>
 
   <!-- Essential Vendor CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -154,7 +167,7 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/profile-img.webp" alt="Dinesh Murugan Profile" class="img-fluid rounded-circle">
+        <img src="assets/img/profile-img.webp" alt="Dinesh Murugan Profile" class="img-fluid rounded-circle" loading="eager" decoding="async">
         <h1><a href="index.html">P Dinesh Murugan</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://leetcode.com/u/dineshmurugan518/" target="_blank" rel="noopener" title="LeetCode Profile">
@@ -197,7 +210,7 @@
     <div class="hero-container" data-aos="fade-in">
       <h1>P Dinesh Murugan</h1>
       <p style="margin-bottom: auto;">I'm <span class="typed"
-          data-typed-items="Frontend Developer, Web Designer, Angular Enthusiast, Tech Explorer">Developer</span>
+          data-typed-items="Angular Developer, Tech Explorer,Engineer">Angular Developer</span>
       </p>
       <!-- <span style="color: white; font-size: 12px; margin: auto;">Ready for a Full-Time Role — <a href="#contact"
           class="btn btn-primary mt-4"> Let’s Connect!</a></span> -->
@@ -214,37 +227,30 @@
         <div class="section-title">
           <h2>About</h2>
           <p>
-            I'm Dinesh Murugan, a passionate frontend developer skilled in Angular 17, HTML, CSS, JavaScript, and
-            Strapi,
-            with a background in Electrical and Electronics Engineering. I’ve worked on real-time projects like
-            HeatFleet during my internship and regularly build UI challenges on Frontend Mentor. I'm actively seeking a
-            full-time frontend developer role to grow and contribute to impactful projects.
+            I am a specialized Angular Developer dedicated to building scalable enterprise solutions and high-performance web applications. With a core expertise in the <strong>Angular ecosystem (v17+)</strong>, <strong>TypeScript</strong>, and <strong>RxJS</strong>, I focus on architecting maintainable UI components and seamless API integrations. My experience includes developing complex multi-role HR platforms and migrating legacy systems to modern, reactive architectures.
+          </p>
         </div>
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.webp" class="img-fluid" alt="Dinesh Murugan Profile">
+            <img src="assets/img/profile-img.webp" class="img-fluid" alt="Dinesh Murugan Profile" loading="lazy" decoding="async">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3> Web Developer</h3>
             <p class="fst-italic">
-              I'm dedicated to continual learning and growth, regularly attending workshops, online courses, and
-              hackathons to stay updated with the latest industry trends and technologies. I'm excited about the
-              ever-evolving nature of web development and the possibilities it holds.
+              As an Enterprise Angular Developer, I specialize in crafting robust, scalable, and high-performance web applications. My focus is on delivering clean, maintainable code and architecting solutions that meet complex business requirements. I am passionate about leveraging the latest Angular features and best practices to build exceptional user experiences.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 6382 410 301</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Tamil Nadu, India</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Availability:</strong> <span>Open to Opportunities</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Experience:</strong> <span>Enterprise Angular Development</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Electrical and Electronics
-                      Engineering</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.E. in Electrical and Electronics Engineering</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span
                       id="emailLink">dineshmurugan518@gmail.com</span>
 
@@ -275,129 +281,39 @@
         <div class="section-title">
           <h2>Skills</h2>
           <p>
-            Proficient in front-end development with <strong>HTML, CSS, SCSS, JavaScript</strong>, and frameworks like
-            <strong>Angular</strong>. Skilled in scripting with <strong>TypeScript</strong> and backend integration
-            using <strong>Strapi</strong>. Strong understanding of website optimization through <strong>SEO
-              practices</strong>.
+            Specialized in building scalable enterprise applications with <strong>Angular 17+</strong>, <strong>TypeScript</strong>, and <strong>RxJS</strong>. Expert in crafting responsive, maintainable UI architectures and integrating complex REST APIs with robust error handling and performance optimization.
           </p>
         </div>
 
-        <div class="row skills-content">
+        <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
-            <div class="progress">
-              <span class="skill">HTML <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
-                  aria-label="HTML 90%"></div>
-              </div>
+            <div class="resume-item">
+              <h4>Frontend Frameworks</h4>
+              <p>Angular 17+, TypeScript, JavaScript (ES6+)</p>
             </div>
-
-            <div class="progress">
-              <span class="skill">CSS / SCSS <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
-                  aria-label="CSS / SCSS 85%"></div>
-              </div>
+            <div class="resume-item">
+              <h4>Styling & UI</h4>
+              <p>SCSS / CSS3, Bootstrap 5, Responsive Design, Figma-to-Code</p>
             </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                  aria-label="JavaScript 70%"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Angular 17 <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                  aria-label="Angular 17 70%"></div>
-              </div>
+            <div class="resume-item">
+              <h4>State & Async Handling</h4>
+              <p>RxJS, Angular Services, Reactive Forms, Component Communication</p>
             </div>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="progress">
-              <span class="skill">TypeScript <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                  aria-label="TypeScript 70%"></div>
-              </div>
+            <div class="resume-item">
+              <h4>API & Integration</h4>
+              <p>REST APIs, HTTP Interceptors, Authentication Flow, Strapi (CMS)</p>
             </div>
-
-            <div class="progress">
-              <span class="skill">Strapi (Backend Integration) <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                  aria-label="Strapi 65%"></div>
-              </div>
+            <div class="resume-item">
+              <h4>Tools & AI</h4>
+              <p>Git / GitHub, Postman, AI-assisted development (Copilot/Antigravity)</p>
             </div>
-
-            <div class="progress">
-              <span class="skill">SEO Practices <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                  aria-label="SEO Practices 65%"></div>
-              </div>
+            <div class="resume-item">
+              <h4>Optimization & Analytics</h4>
+              <p>SEO Practices, GA4, Google Search Console, Performance Profiling</p>
             </div>
-          </div>
-        </div>
-
-        <div class="section-title mt-5">
-          <h2>Tools</h2>
-          <p>
-            Experienced with version control using <strong>Git, GitHub, GitLab</strong>, and website analytics tools
-            like <strong>Google Analytics 4 (GA4)</strong>, <strong>Google Search Console</strong>, and
-            <strong>Hotjar</strong>. Proficient in design tools such as <strong>Photoshop 7.0</strong> and
-            <strong>Canva</strong>.
-          </p>
-        </div>
-
-        <div class="row skills-content">
-          <div class="col-lg-6" data-aos="fade-up">
-            <div class="progress">
-              <span class="skill">Git / GitHub / GitLab <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                  aria-label="Git / GitHub / GitLab 75%"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop & Canva <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                  aria-label="Photoshop & Canva 70%"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Google Analytics 4 (GA4) <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                  aria-label="Google Analytics 4 (GA4) 65%"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="progress">
-              <span class="skill">Google Search Console <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                  aria-label="Google Search Console 65%"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Hotjar <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                  aria-label="Hotjar 65%"></div>
-              </div>
-            </div>
-
           </div>
         </div>
 
@@ -445,6 +361,18 @@
           <p>Hands-on beginner web development course covering core web concepts, HTML markup, CSS styling fundamentals, JavaScript basics, and working with browser devtools.</p>
         </div>
 <!-- End Resume Item -->
+        <h3 class="resume-title">Innovation & Funded Research</h3>
+        <div class="resume-item">
+          <h4>Principal Developer | Automated Cattle Prevention System</h4>
+          <h5>2024 - 2025</h5>
+          <p><em>Funded by EDII — IVP (Voucher B)</em></p>
+          <ul>
+            <li>Received <strong>₹2,00,000 funding</strong> for the "Mosquito and Insects Prevention System for Cattles".</li>
+            <li>Engineered an automated environment monitoring system using <strong>Arduino, MQ-135, DHT22, and LDR sensors</strong>.</li>
+            <li>Implemented threshold-based logic for chemical-free <strong>neem oil vaporization</strong> to improve cattle health.</li>
+            <li>Designed and developed the complete system architecture, focusing on IoT-based real-time decision making.</li>
+          </ul>
+        </div>
       </div>
 
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
@@ -455,13 +383,13 @@
           <h5>Sep 2025 – Present</h5>
           <p><em><a href="https://scrutinysoft.com/" rel="noopener" target="_blank">Scrutinysoft</a>, Chennai, India (On-site)</em></p>
           <ul>
-            <li>Develop and maintain multiple SaaS-based Angular applications for enterprise clients in talent management, HR, and productivity domains</li>
-            <li>Build reusable UI components and responsive layouts using Angular 17, TypeScript, and Bootstrap</li>
-            <li>Implement modules for talent management systems, task scheduling platforms, claims processing, and real-time chat applications</li>
-            <li>Integrate secure REST APIs and optimize application performance for faster rendering and enhanced user experience</li>
-            <li>Collaborate with backend developers and UI/UX designers in agile environment to deliver high-quality, production-ready releases</li>
-            <li>Support comprehensive testing, debugging, and deployment processes to ensure stable, scalable applications</li>
-            <li>Participate in code reviews and contribute to maintaining code quality standards across the codebase</li>
+            <li>Built multi-role Angular applications for enterprise HR and talent management platforms.</li>
+            <li>Developed core modules including Attendance Tracking, Claims Lifecycle, Appraisal Workflows, and HR Dashboards.</li>
+            <li>Led the migration of legacy frontend templates to a modern Angular architecture (v17+).</li>
+            <li>Integrated high-volume REST APIs using RxJS for reactive data handling and state management.</li>
+            <li>Implemented global Authentication Interceptors and responsive UI components with advanced pagination and filtering.</li>
+            <li>Collaborated with backend teams to ensure seamless data flow and optimized performance.</li>
+            <li>Participated in code reviews to maintain high standards of code quality and scalability.</li>
           </ul>
         </div><!-- End Resume Item -->
 
@@ -470,19 +398,19 @@
           <h5>Dec 2024 – June 2025</h5>
           <p><em><a href="https://systemstar.net/" rel="noopener" target="_blank">SystemStar</a>, Remote</em></p>
           <ul>
-            <li>Built responsive UI components and migrated internal admin panel from HTML to Angular for the HeatFleet platform using Angular and SCSS</li>
-            <li>Led complete homepage redesign aligned with modern UI/UX standards, improving usability and performance metrics</li>
-            <li>Integrated structured data and resolved technical SEO issues, boosting search engine visibility and organic traffic</li>
-            <li>Utilized Strapi for content management, Google Search Console for SEO monitoring, GA4 for analytics, and Hotjar for user behavior analysis</li>
-            <li>Developed HeatFleet TV section for media content showcasing with custom backend API integration</li>
-            <li>Conducted cross-browser testing and optimization to ensure consistent performance across all major platforms</li>
+            <li>Implemented technical SEO improvements, boosting organic traffic and search visibility for HeatFleet.</li>
+            <li>Translated complex Figma designs into high-fidelity, responsive Angular components.</li>
+            <li>Redesigned core UI layouts to optimize performance and cross-device compatibility.</li>
+            <li>Assisted in the strategic migration of legacy static HTML pages to a component-driven Angular architecture.</li>
+            <li>Utilized Google Analytics and Hotjar to analyze user behavior and inform UI improvements.</li>
+            <li>Conducted cross-browser optimization to ensure a consistent experience across all platforms.</li>
           </ul>
         </div><!-- End Resume Item -->
       </div>
     </div>
 
     <div class="text-center mt-4">
-      <a href="DineshMurugan.pdf" download class="button-85" role="button" data-aos="zoom-in" data-aos-duration="200">Download Resume</a>
+      <a href="Dinesh_Murugan_P.pdf" download class="button-85" role="button" data-aos="zoom-in" data-aos-duration="200">Download Resume</a>
     </div>
   </div>
 
@@ -506,12 +434,10 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active other-tab">All</li>
-              <li data-filter=".filter-mentor" class="other-tab">Frontend Mentor</li>
-              <li data-filter=".filter-course" class="other-tab">Course</li>
               <li data-filter=".filter-internship" id="internship-tab">Internship Project</li>
-              <!-- <li data-filter=".filter-mentor">Frontend Mentors Projects</li>
-                <li data-filter=".filter-course">Course Projects</li>
-                <li data-filter=".filter-web">Internship Real Time project</li> -->
+              <li data-filter=".filter-funded" class="other-tab">Research & Funded</li>
+              <li data-filter=".filter-course" class="other-tab">Course</li>
+              <li data-filter=".filter-mentor" class="other-tab">Frontend Mentor</li>
             </ul>
           </div>
         </div>
@@ -560,31 +486,96 @@
 
         </script>
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-          <!-- course projects -->
-
-          <!-- tech shop -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-course">
+          <!-- Enterprise & Key Personal Projects -->
+          
+          <!-- Professional Experience Projects (Internship) -->
+          
+          <!-- HeatFleet (Internship) -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-internship">
             <div class="portfolio-wrap">
-              <img src="MyProject-img/TechShop.webp" class="img-fluid" alt="TechShop Page">
+              <img src="MyProject-img/heatfleet_landing_page.webp" class="img-fluid" alt="HeatFleet Enterprise Landing Page">
               <div class="portfolio-links">
-                <a href="MyProject-img/TechShop.webp" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="https://pdineshmurugan.github.io/TechShop/TechShop-main/Project-2%20Tech%20Homepage/index.html"
-                  rel="noopener" target="_blank" title="Tech Shop"><i class="bx bx-link"></i></a>
+                <a href="MyProject-img/heatfleet_landing_page.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="HeatFleet Enterprise Platform"><i class="bx bx-plus"></i></a>
+                <a href="https://heatfleet.com" rel="noopener" target="_blank" title="View Project"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
-          <!-- frontend Mentor Projects-->
-          <!-- Product Preview card -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-mentor">
+          <!-- HeatFleet TV 1 (Internship) -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-internship">
             <div class="portfolio-wrap">
-              <img src="MyProject-img/frontend mentor/ProductCard.webp" class="img-fluid" alt="Prodcut Preview Page">
+              <img src="MyProject-img/heatweeksTv1.webp" class="img-fluid" alt="HeatFleet TV Page Preview">
               <div class="portfolio-links">
-                <a href="MyProject-img/frontend mentor/ProductCard.webp" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="https://pdineshmurugan.github.io/Product-preview-card-component/" rel="noopener"
-                  target="_blank" title="Prodcut Preview Card"><i class="bx bx-link"></i></a>
+                <a href="MyProject-img/heatweeksTv1.webp" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="HeatFleet TV Page"><i class="bx bx-plus"></i></a>
+                <a href="https://heatfleet.com/HeatWeek_Tv.html" rel="noopener" target="_blank" title="HeatFleet TV"><i
+                    class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- HeatFleet TV 2 (Internship) -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-internship">
+            <div class="portfolio-wrap">
+              <img src="MyProject-img/heatweeksTv2.webp" class="img-fluid" alt="HeatFleet TV Inner Page Preview">
+              <div class="portfolio-links">
+                <a href="MyProject-img/heatweeksTv2.webp" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="HeatFleet TV Page"><i class="bx bx-plus"></i></a>
+                <a href="https://heatfleet.com/HeatWeek_Tv.html" rel="noopener" target="_blank" title="HeatFleet TV"><i
+                    class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Funded / Research Project -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-funded">
+            <div class="portfolio-wrap">
+              <img src="MyProject-img/automated_insect_prevention.png" class="img-fluid" alt="Mosquito and Insects Prevention System for Cattles">
+              <div class="portfolio-links">
+                <a href="MyProject-img/automated_insect_prevention.png" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                   title="<b>Mosquito and Insects Prevention System for Cattles</b><br>
+                          Funded with ₹2,00,000 under EDII Innovation Voucher Programme (IVP - Voucher B)<br><br>
+                          Automated system using microcontroller-based control with real-time environmental monitoring (MQ-135, DHT22, LDR) and eco-friendly neem oil vaporization.">
+                  <i class="bx bx-plus"></i>
+                </a>
+                <a href="Design and Development of an Automated Insect.pdf" target="_blank" title="View Project Paper"><i class="bx bx-file"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-info mt-2 px-3">
+              <h4 style="font-size: 18px; color: #050d18;">Mosquito and Insects Prevention System for Cattles</h4>
+              <p style="font-size: 14px; font-style: italic; color: #149ddd; font-weight: 600;">Funded with ₹2,00,000 under EDII IVP - Voucher B</p>
+              <p style="font-size: 13px; line-height: 1.5; color: #444;">
+                Automated environmental monitoring and organic repellent system using sensors (MQ-135, DHT22, LDR) and threshold-based logic to improve cattle health.
+              </p>
+              <ul style="font-size: 12px; color: #555; padding-left: 20px;">
+                <li>Built automated microcontroller-based control system.</li>
+                <li>Integrated air quality, temp/humidity, and light sensors.</li>
+                <li>Eco-friendly neem oil vaporization (chemical-free).</li>
+                <li>Proven impact on reducing insect-related cattle diseases.</li>
+              </ul>
+              <p style="font-size: 12px; color: #666;"><strong>Tech:</strong> Arduino, Embedded C++, Sensor Integration</p>
+              <a href="Design and Development of an Automated Insect.pdf" target="_blank" class="btn btn-primary btn-sm mt-2" style="background: #149ddd; border: none; font-size: 12px;">View Project Paper</a>
+            </div>
+          </div>
+
+          <!-- Finance Tracker (Key Personal Project) -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-course">
+            <div class="portfolio-wrap">
+              <img src="MyProject-img/finance_tracker_preview.png" class="img-fluid" alt="Personal Finance Tracker Application">
+              <div class="portfolio-links">
+                <a href="MyProject-img/finance_tracker_preview.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Finance Tracker: Built with Angular, RxJS, and AI-assisted development tools"><i class="bx bx-plus"></i></a>
+                <a href="https://dmfintracker.web.app/" rel="noopener" target="_blank" title="View Source"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- TechShop -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-course">
+            <div class="portfolio-wrap">
+              <img src="MyProject-img/TechShop.webp" class="img-fluid" alt="TechShop E-commerce Preview">
+              <div class="portfolio-links">
+                <a href="MyProject-img/TechShop.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="TechShop E-commerce"><i class="bx bx-plus"></i></a>
+                <a href="https://pdineshmurugan.github.io/TechShop/TechShop-main/Project-2%20Tech%20Homepage/index.html" rel="noopener" target="_blank" title="View Project"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -662,43 +653,7 @@
           </div>
           <!-- internship project -->
           <!-- heatfleet -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-internship">
 
-            <div class="portfolio-wrap">
-              <img src="MyProject-img/heatfleet_landing_page.webp" class="img-fluid"
-                alt="HeatFleet Landing Page Preview">
-              <div class="portfolio-links">
-                <a href="MyProject-img/heatfleet_landing_page.webp" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="HeatFleet Landing Page"><i class="bx bx-plus"></i></a>
-                <a href="https://heatfleet.com" rel="noopener" target="_blank" title="HeatFleet Website"><i
-                    class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <!-- heatfleet tv 1 -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-internship">
-            <div class="portfolio-wrap">
-              <img src="MyProject-img/heatweeksTv1.webp" class="img-fluid" alt="HeatFleet TV Page Preview">
-              <div class="portfolio-links">
-                <a href="MyProject-img/heatweeksTv1.webp" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="HeatFleet TV Page"><i class="bx bx-plus"></i></a>
-                <a href="https://heatfleet.com/HeatWeek_Tv.html" rel="noopener" target="_blank" title="HeatFleet TV"><i
-                    class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <!-- heatfleet tv 2 -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-internship">
-            <div class="portfolio-wrap">
-              <img src="MyProject-img/heatweeksTv2.webp" class="img-fluid" alt="HeatFleet TV Inner Page Preview">
-              <div class="portfolio-links">
-                <a href="MyProject-img/heatweeksTv2.webp" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="HeatFleet TV Page"><i class="bx bx-plus"></i></a>
-                <a href="https://heatfleet.com/HeatWeek_Tv.html" rel="noopener" target="_blank" title="HeatFleet TV"><i
-                    class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
 
 
 
@@ -742,7 +697,7 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>5/129-3 Amman Kovil Street,puthiyamputhur,Tuticorin-TN</p>
+                <p>Tamil Nadu, India</p>
               </div>
 
               <div class="email">
@@ -751,10 +706,10 @@
                 <p>dineshmurugan518@gmail.com</p>
               </div>
 
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 6382410301</p>
+              <div class="linkedin">
+                <i class="bi bi-linkedin"></i>
+                <h4>LinkedIn:</h4>
+                <p><a href="https://www.linkedin.com/in/dineshmuruganp" target="_blank" rel="noopener">linkedin.com/in/dineshmuruganp</a></p>
               </div>
               <iframe width="350" height="450" style="border:0" loading="lazy" allowfullscreen
                 src="https://maps.google.com/maps?q=5/129/3%20amman%20kovil%20street,puthiamputhur&t=&z=13&ie=UTF8&iwloc=&output=embed"

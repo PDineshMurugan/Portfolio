@@ -1,129 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Code in Progress... 🧑‍💻</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code in Progress... 🧑‍💻</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    body {
-      background: linear-gradient(135deg, #00F260, #0575E6, #FF6A88, #FF9A8B);
-      background-size: 500% 500%;
-      animation: gradientMove 10s ease infinite;
-      font-family: 'Poppins', sans-serif;
-      color: #222;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      padding: 1rem;
-    }
+      body {
+        background: linear-gradient(135deg, #00f260, #0575e6, #ff6a88, #ff9a8b);
+        background-size: 500% 500%;
+        animation: gradientMove 10s ease infinite;
+        font-family: "Poppins", sans-serif;
+        color: #222;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 1rem;
+      }
 
-    @keyframes gradientMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+      @keyframes gradientMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
 
-    .emoji {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      animation: shake 2s infinite;
-    }
+      .emoji {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        animation: shake 2s infinite;
+      }
 
-    @keyframes shake {
-      0%, 100% { transform: rotate(0deg); }
-      25% { transform: rotate(5deg); }
-      50% { transform: rotate(-5deg); }
-      75% { transform: rotate(5deg); }
-    }
+      @keyframes shake {
+        0%,
+        100% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(5deg);
+        }
+        50% {
+          transform: rotate(-5deg);
+        }
+        75% {
+          transform: rotate(5deg);
+        }
+      }
 
-    .cartoon {
-      max-width: 240px;
-      margin-bottom: 1rem;
-      border-radius: 20px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-    }
+      .cartoon {
+        max-width: 240px;
+        margin-bottom: 1rem;
+        border-radius: 20px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      }
 
-    h1 {
-      font-size: 2.5rem;
-      color: #fff;
-      text-shadow: 2px 2px #00000066;
-      margin-bottom: 0.5rem;
-    }
+      h1 {
+        font-size: 2.5rem;
+        color: #fff;
+        text-shadow: 2px 2px #00000066;
+        margin-bottom: 0.5rem;
+      }
 
-    p {
-      font-size: 1.2rem;
-      margin: 0 auto 1.2rem;
-      max-width: 600px;
-      color: #222;
-    }
+      p {
+        font-size: 1.2rem;
+        margin: 0 auto 1.2rem;
+        max-width: 600px;
+        color: #222;
+      }
 
-    .button-85 {
-      padding: 1rem 2rem;
-      border: none;
-      background-color: #fff;
-      color: #000;
-      font-size: 1rem;
-      font-weight: 600;
-      border-radius: 50px;
-      cursor: pointer;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      transition: all 0.3s ease-in-out;
-      margin-top: 1rem;
-    }
+      .button-85 {
+        padding: 1rem 2rem;
+        border: none;
+        background-color: #fff;
+        color: #000;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+        margin-top: 1rem;
+      }
 
-    .button-85 a {
-      text-decoration: none;
-      color: inherit;
-    }
+      .button-85 a {
+        text-decoration: none;
+        color: inherit;
+      }
 
-    .button-85:hover {
-      transform: scale(1.05);
-      background-color: #ffe66d;
-    }
+      .button-85:hover {
+        transform: scale(1.05);
+        background-color: #ffe66d;
+      }
 
-    .footer {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #333;
-    }
-  </style>
-</head>
-<body>
-  <div class="emoji">🧑‍💻🔧</div>
+      .footer {
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="emoji">🧑‍💻🔧</div>
 
-  <!-- Cartoon Image of Kid Coding -->
+    <!-- Cartoon Image of Kid Coding -->
 
-  <h1>Code in Progress… Please Stand By!</h1>
-  <p>
-    Our little genius (that’s me 😎) is tweaking the portfolio. <br>
-    Few Updates, lots of coffee, and some epic keyboard smashing in progress!
-  </p>
-  <p><strong>Meanwhile, you can download the resume directly 👇</strong></p>
+    <h1>Code in Progress… Please Stand By!</h1>
+    <p>
+      Our little genius (that’s me 😎) is tweaking the portfolio. <br />
+      Few Updates, lots of coffee, and some epic keyboard smashing in progress!
+    </p>
+    <p><strong>Meanwhile, you can download the resume directly 👇</strong></p>
 
-  <button class="button-85" role="button">
-    <a href="DineshMurugan.pdf" download data-aos="zoom-in" data-aos-duration="200">
-      Download Resume
-    </a>
-  </button>
+    <button class="button-85" role="button">
+      <a
+        href="Dinesh_Murugan_P.pdf"
+        download
+        data-aos="zoom-in"
+        data-aos-duration="200"
+      >
+        Download Resume
+      </a>
+    </button>
 
-  <div class="footer">– Built with ❤️ and semi-broken code by <a href="https://www.linkedin.com/in/dineshmuruganp/" style="color: white;">Dinesh Murugan</a></div>
+    <div class="footer">
+      – Built with ❤️ and semi-broken code by
+      <a href="https://www.linkedin.com/in/dineshmuruganp/" style="color: white"
+        >Dinesh Murugan</a
+      >
+    </div>
 
-  <!-- AOS Script -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
-</body>
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
